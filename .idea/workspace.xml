@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="prefer-music-store:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af4659c8-d85c-4b68-b303-fe410f354413" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/rating-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/rating-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/user-auth-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/user-auth-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_username.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_username.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/sign_up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/user_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/user_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/playlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/playlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/aspect/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/Recommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/Recommender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserRatingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserRatingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/EmailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/EmailUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-auth-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-auth-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/rating-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/rating-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/user-auth-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/user-auth-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/sign_up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/js/playlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/playlist.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1ZjHVzYxSDXNxZLCRiKhRespIrD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/audio" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15332031" />
+    <property name="project.structure.side.proportion" value="0.26327944" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Java_Project\prefer-music-store\web\WEB-INF\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java_Project\prefer-music-store\web\resources\audio" />
+      <recent name="F:\Java_Project\prefer-music-store\src\main\java\com\prefer_music_store\app\util" />
+      <recent name="F:\Java_Project\prefer-music-store\src\main\java\com\prefer_music_store\app\model\mf" />
+      <recent name="F:\Java_Project\prefer-music-store\web\WEB-INF\views" />
+      <recent name="F:\Java_Project\prefer-music-store\src\main\java\com\prefer_music_store\app\util\ml\mf" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.prefer_music_store.app.repo" />
+      <recent name="com.prefer_music_store.app.model" />
+      <recent name="com.prefer_music_store.app.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_prefer-music-store_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65238" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.51" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.51" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="prefer-music-store:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_51_prefer-music-store" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65234" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="prefer-music-store:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.51" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_prefer-music-store" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65234" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.22077923" />
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af4659c8-d85c-4b68-b303-fe410f354413" name="Default Changelist" comment="" />
+      <created>1585345610098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585345610098</updated>
+      <workItem from="1585345615025" duration="1358000" />
+      <workItem from="1585347024816" duration="7422000" />
+      <workItem from="1585413481334" duration="19198000" />
+      <workItem from="1585477906132" duration="46672000" />
+      <workItem from="1585574465945" duration="21333000" />
+      <workItem from="1585691780221" duration="10691000" />
+      <workItem from="1585794756179" duration="11102000" />
+      <workItem from="1585877783809" duration="9339000" />
+      <workItem from="1585898817505" duration="175000" />
+      <workItem from="1585904001790" duration="4161000" />
+      <workItem from="1585951338228" duration="2504000" />
+      <workItem from="1585993516900" duration="8027000" />
+      <workItem from="1586037263357" duration="5298000" />
+      <workItem from="1586054079721" duration="613000" />
+      <workItem from="1586125276733" duration="2027000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1585422347091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1585422347090" />
+    <state x="552" y="178" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585951410468">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585951410468" />
+    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586125361869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586125361869" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585806233190">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585806233190" />
+    <state x="587" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585345690840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="587" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585345690840" />
+    <state x="751" y="378" width="444" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585508509569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="751" y="378" width="444" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1585508509569" />
+    <state x="700" y="176" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585515295091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="700" y="176" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585515295091" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585489371928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585489371928" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586054090063">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586054090063" />
+    <state width="1877" height="75" key="GridCell.Tab.0.bottom" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.0.center" timestamp="1586126479407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479407" />
+    <state width="1877" height="75" key="GridCell.Tab.0.left" timestamp="1586126479407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479407" />
+    <state width="1877" height="75" key="GridCell.Tab.0.right" timestamp="1586126479407">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479407" />
+    <state width="1877" height="75" key="GridCell.Tab.1.bottom" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.1.center" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.1.left" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.1.right" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.2.bottom" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.2.center" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.2.left" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1877" height="75" key="GridCell.Tab.2.right" timestamp="1586126479408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="75" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586126479408" />
+    <state width="1439" height="452" key="GridCell.Tab.3.bottom" timestamp="1585606536118">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="452" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585606536118" />
+    <state width="1439" height="452" key="GridCell.Tab.3.center" timestamp="1585606536117">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="452" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585606536117" />
+    <state width="1439" height="452" key="GridCell.Tab.3.left" timestamp="1585606536117">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="452" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585606536117" />
+    <state width="1439" height="452" key="GridCell.Tab.3.right" timestamp="1585606536118">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1439" height="452" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585606536118" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1585529632249">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585529632249" />
+    <state x="722" y="417" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1585424592103">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="417" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1040@0.0.1920.1040" timestamp="1585424592103" />
+    <state x="676" y="159" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585347044764">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="159" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585347044764" />
+    <state x="690" y="284" key="extract.method.dialog" timestamp="1585803675161">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="284" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585803675161" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1585691860020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585691860020" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585576093793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585576093793" />
+    <state x="640" y="203" key="spring file set editor" timestamp="1585420399930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="203" key="spring file set editor/0.0.1920.1040@0.0.1920.1040" timestamp="1585420399930" />
+  </component>
+</project>
