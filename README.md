@@ -7,15 +7,15 @@ It allows people to rate songs from the store, learn them using Matrix Factoriza
 To use this system, the following installation is required:
 
 ### Libraries
-- DL4J(and ND4J)
-- OpenCV 4.1.0
+- ND4J
 
 ### Frameworks
-- Spring MVC
+- Spring 5.2.3.RELEASE
+- Spring Security 5.2.1.RELEASE
 - MyBatis 3
 
 ### Server
-- Apache Tomcat 8.5
+- Apache Tomcat 8.5.51
 
 ### Build
 - Maven
