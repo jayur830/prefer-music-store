@@ -17,8 +17,11 @@ public class UserRFMCalculator {
 	private DateFormat dateFormat;
 
 	public int[] getRFM(String recentRatingDateTime, long ratingCount, double avgActiveTime) {
+		// 최근 평점 반영 시간이 null 이라면 Long 자료형 범위의 최댓값을 할당하고, 그렇지 않을 경우 최근 평점 반영 시간과 현재 시간과의 차이를 구한다.
+		// null 일 경우 Long 자료형 범위의 최댓값을 할당하는 이유는 R을 구할 시 인수값을 365 이상으로 하여 0점으로 반환하게 하기 위함이다.
 		long ratingTimeDiff = recentRatingDateTime == null || recentRatingDateTime.equals("null") ?
 				Long.MAX_VALUE : calculateTimeDiff(recentRatingDateTime, this.dateFormat.format(new Date()), this.DATE);
+		// R, F, M을 구한다.
 		int r = getRecencyScore(ratingTimeDiff), f = getFrequencyScore(ratingCount), m = getDurationScore(avgActiveTime);
 		return new int[] { r, f, m };
 	}

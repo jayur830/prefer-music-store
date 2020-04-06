@@ -6,6 +6,7 @@ import com.prefer_music_store.app.security.CustomUserDetailsService;
 import com.prefer_music_store.app.service.PlaylistService;
 import com.prefer_music_store.app.service.UserRatingService;
 import com.prefer_music_store.app.service.UserService;
+import com.prefer_music_store.app.util.MapConverter;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -46,12 +47,10 @@ public class DataController {
             @RequestParam("name") String name,
             @RequestParam("birth") String birth,
             @RequestParam("email") String email) {
-        Map<String, Object> params = new HashMap<>();
-        params.put("name", name);
-        params.put("birth", birth);
-        params.put("email", email);
-
-        String username = this.userService.findUsername(params);
+        String username = this.userService.findUsername(
+                MapConverter.convertToHashMap(
+                        new String[] { "name", "birth", "email" },
+                        new Object[] { name, birth, email }));
         return String.format("{ \"username\": %s }", username == null ? "null" :
                 "\"" + username.substring(0, 3) + username.substring(3).replaceAll(".", "*") + "\"");
     }
@@ -61,9 +60,9 @@ public class DataController {
     public String findPasswordAction(
             @RequestParam("username") String username,
             @RequestParam("email") String email) {
-        Map<String, Object> params = new HashMap<>();
-        params.put("username", username);
-        params.put("email", email);
+        Map<String, Object> params = MapConverter.convertToHashMap(
+                new String[] { "username", "email" },
+                new Object[] { username, email });
         boolean valid = this.userService.existUserByUsernameAndEmail(params);
         if (valid) this.userDetailsService.resetPassword(params);
         return "{ \"valid\": " + valid + " }";
@@ -82,8 +81,9 @@ public class DataController {
     @PostMapping("/edit_user_info")
     public void editUserInfo(UserVO userVO) {
         this.userService.editUserInfo(userVO);
-        System.out.println(userVO);
-        if (userVO.getPassword() != null) this.userDetailsService.changePassword(userVO.getUsername(), userVO.getPassword());
+        if (userVO.getPassword() != null)
+            this.userDetailsService.changePassword(
+                    userVO.getUsername(), userVO.getPassword());
     }
 
     @GetMapping("/playlist_action")
