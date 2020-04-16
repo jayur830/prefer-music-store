@@ -7,7 +7,8 @@ It allows people to rate songs from the store, learn them using Matrix Factoriza
 To use this system, the following installation is required:
 
 ### Libraries
-- ND4J
+- DeepLearning4j
+- ReactJS
 
 ### Frameworks
 - Spring 5.2.3.RELEASE
