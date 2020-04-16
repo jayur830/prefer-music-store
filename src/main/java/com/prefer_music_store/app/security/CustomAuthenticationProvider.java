@@ -23,11 +23,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         String username = (String) auth.getPrincipal(), password = (String) auth.getCredentials();
         //
         UserDetails user = this.userDetailsService.loadUserByUsername(username);
-        password = this.passwordEncoder.encode(password);
 
         // 아이디 또는 비밀번호가 일치하지 않는 경우
         if (!user.getUsername().equals(username) ||
-                !user.getPassword().equals(password))
+                !this.passwordEncoder.matches(password, user.getPassword()))
             throw new BadCredentialsException(username);
         // 비밀번호 유효기간이 만료된 경우
         else if (!user.isCredentialsNonExpired()) throw new CredentialsExpiredException(username);

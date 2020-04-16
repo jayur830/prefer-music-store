@@ -22,6 +22,12 @@
         ]]>
     </update>
 
+    <delete id="deleteUserRating" parameterType="string">
+        <![CDATA[
+            delete from user_rating where user_id = #{user_id}
+        ]]>
+    </delete>
+
     <select id="getRatings" resultType="map">
         <![CDATA[
             select * from user_rating

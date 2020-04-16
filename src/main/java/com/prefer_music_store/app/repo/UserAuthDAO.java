@@ -13,4 +13,5 @@ public interface UserAuthDAO {
     void disableAccount(@Param("username") String username);
     void initLoginFailureCount(@Param("username") String username);
     void updatePassword(Map<String, Object> params);
+    void deleteUserAuthInfo(@Param("username") String username);
 }

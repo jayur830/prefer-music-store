@@ -132,19 +132,19 @@
             <version>2.0.3</version>
         </dependency>
 
-<!--        &lt;!&ndash; DL4J &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.deeplearning4j</groupId>-->
-<!--            <artifactId>dl4j-examples</artifactId>-->
-<!--            <version>1.0.0-beta6</version>-->
-<!--        </dependency>-->
-
-        <!-- ND4J -->
+        <!-- DL4J -->
         <dependency>
-            <groupId>org.nd4j</groupId>
-            <artifactId>nd4j-native-platform</artifactId>
-            <version>${org.nd4j-version}</version>
+            <groupId>org.deeplearning4j</groupId>
+            <artifactId>dl4j-examples</artifactId>
+            <version>1.0.0-beta6</version>
         </dependency>
+
+<!--        &lt;!&ndash; ND4J &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.nd4j</groupId>-->
+<!--            <artifactId>nd4j-native-platform</artifactId>-->
+<!--            <version>${org.nd4j-version}</version>-->
+<!--        </dependency>-->
 
         <!-- Generate random string -->
         <dependency>

@@ -1,22 +1,24 @@
 package com.prefer_music_store.app.service;
 
-import com.prefer_music_store.app.repo.UserDAO;
-import com.prefer_music_store.app.repo.UserVO;
-import com.prefer_music_store.app.util.EmailUtils;
+import com.prefer_music_store.app.repo.*;
 import com.prefer_music_store.app.util.MapConverter;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.util.HashMap;
 import java.util.Map;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {
+    @Resource(name = "userAuthDAO")
+    private UserAuthDAO userAuthDAO;
     @Resource(name = "userDAO")
     private UserDAO userDAO;
+    @Resource(name = "userLogDAO")
+    private UserLogDAO userLogDAO;
+    @Resource(name = "ratingDAO")
+    private UserRatingDAO ratingDAO;
+    @Resource(name = "storeDAO")
+    private StoreDAO storeDAO;
 
     @Override
     public void signUp(UserVO userVO) {
@@ -44,11 +46,28 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void deleteUserInfo(String username) {
+        // user 테이블에서 삭제
+        this.userDAO.deleteUserInfo(username);
+        // user_auth 테이블에서 삭제
+        this.userAuthDAO.deleteUserAuthInfo(username);
+        // user_log 테이블에서 삭제
+        this.userLogDAO.deleteUserLog(username);
+        // user_rating 테이블에서 삭제
+        this.ratingDAO.deleteUserRating(username);
+    }
+
+    @Override
     public void updateRatingHistory(String userId, String ratingDatetime) {
         // userId에 해당하는 유저의 최근 평점 반영 시간을 ratingDatetime으로 갱신한다.
         this.userDAO.updateRatingHistory(
                 MapConverter.convertToHashMap(
                         new String[] { "user_id", "rating_datetime" },
                         new Object[] { userId, ratingDatetime }));
+    }
+
+    @Override
+    public String getStoreId(String username) {
+        return this.storeDAO.getStoreId(username);
     }
 }

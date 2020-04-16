@@ -3,7 +3,7 @@
 <%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="/WEB-INF/include/header.jsp" %>
 <sec:authorize access="isAuthenticated()">
-    <c:redirect url="/" />
+    <c:redirect url="/main" />
 </sec:authorize>
 <html>
 <head>
@@ -47,14 +47,13 @@
                 </td>
             </tr>
             <tr style="text-align: center;">
-                <td style="padding: 20px 0;"><input type="button" id="sign_up" value="회원가입" class="btn_light_dark" style="font-size: 14pt; padding: 10px 50px;" /></td>
+                <td style="padding: 20px 0;"><input type="button" id="back" value="돌아가기" class="btn_light_dark" style="font-size: 14pt; padding: 10px 50px;" /></td>
                 <td style="padding: 20px 0;"><input type="button" id="guest" value="비회원" class="btn_dark_light" style="font-size: 14pt; padding: 10px 50px;" /></td>
             </tr>
         </table>
     </div>
     <script src="<c:url value="/resources/js/user.js"/>"></script>
     <script>
-        console.log("${_csrf.parameterName}", "${_csrf.token}");
         let validation = () => {
             if ($("#username").val() === "") {
                 alert("아이디를 입력해주세요.");
@@ -77,8 +76,8 @@
                     "${_csrf.parameterName}", "${_csrf.token}",
                     $("#username").val(), $("#password").val());
         });
-        $("#sign_up").on("click", () => location.replace("/sign_up"));
-        $("#guest").on("click", () => location.replace("/"));
+        $("#back").on("click", () => location.replace("/"));
+        $("#guest").on("click", () => location.replace("/main"));
     </script>
 </body>
 </html>

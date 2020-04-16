@@ -72,8 +72,10 @@ public class Nd4jMatrixFactorization implements MatrixFactorization {
         this.lambda = lambda; this.alpha = alpha;
         
         // 행렬 X와 Y 초기화
-        this.x = Nd4j.rand(this.nUsers, this.nFactor = nFactor).mul(0.01);
-        this.y = Nd4j.rand(this.nItems, this.nFactor).mul(0.01);
+        this.x = Nd4j.rand(this.nUsers, this.nFactor = nFactor);
+        this.y = Nd4j.rand(this.nItems, this.nFactor);
+        if (this.nUsers != 0) this.x = this.x.mul(0.01);
+        if (this.nItems != 0) this.y = this.y.mul(0.01);
         // 행렬 P와 C 초기화
         init();
 

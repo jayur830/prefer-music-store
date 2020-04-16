@@ -22,6 +22,16 @@ public class PageController {
         return "login";
     }
 
+    @GetMapping("/main")
+    public String main() {
+        return "main";
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+        return "admin";
+    }
+
     @GetMapping("/find_username")
     public String findUsername() {
         return "find_username";
@@ -30,6 +40,11 @@ public class PageController {
     @GetMapping("/find_password")
     public String findPassword() {
         return "find_password";
+    }
+
+    @GetMapping("/delete_user_auth")
+    public String deleteUserAuth() {
+        return "delete_user_auth";
     }
 
     @GetMapping("/user_info")

@@ -38,15 +38,18 @@ public class CustomLogoutSuccessHandler implements LogoutSuccessHandler {
         if (authentication != null) {
             // 해당 계정의 아이디
             String username = authentication.getName();
+            boolean isAdmin = authentication.getAuthorities().toArray()[0].toString().equals("ROLE_ADMIN");
 
-            // 해당 계정의 로그아웃 시간을 DB에 반영한다.
-            this.userLogDAO.setLogoutDatetime(
-                    MapConverter.convertToHashMap(
-                            new String[] { "username", "logout_datetime" },
-                            new Object[] { username, this.dateFormat.format(new Date()) }));
+            if (!isAdmin) {
+                // 해당 계정의 로그아웃 시간을 DB에 반영한다.
+                this.userLogDAO.setLogoutDatetime(
+                        MapConverter.convertToHashMap(
+                                new String[]{"username", "logout_datetime"},
+                                new Object[]{username, this.dateFormat.format(new Date())}));
 
-            // 로그아웃 하였으므로 현재 로그인한 유저들의 정보를 모아놓은 테이블에서도 해당 계정 정보를 지운다.
-            this.userTable.remove(username);
+                // 로그아웃 하였으므로 현재 로그인한 유저들의 정보를 모아놓은 테이블에서도 해당 계정 정보를 지운다.
+                this.userTable.remove(username);
+            }
 
             // 클라이언트에게 로그인 페이지로 응답한다.
             response.sendRedirect("/login");

@@ -1,5 +1,6 @@
 package com.prefer_music_store.app.controller;
 
+import com.prefer_music_store.app.engine.MainEngine;
 import com.prefer_music_store.app.repo.UserVO;
 import com.prefer_music_store.app.security.CustomUserDetails;
 import com.prefer_music_store.app.security.CustomUserDetailsService;
@@ -7,7 +8,11 @@ import com.prefer_music_store.app.service.PlaylistService;
 import com.prefer_music_store.app.service.UserRatingService;
 import com.prefer_music_store.app.service.UserService;
 import com.prefer_music_store.app.util.MapConverter;
+import com.prefer_music_store.app.util.MessageUtils;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,6 +34,23 @@ public class DataController {
     private PlaylistService playlistService;
     @Resource(name = "ratingService")
     private UserRatingService ratingService;
+    @Resource(name = "passwordEncoder")
+    private PasswordEncoder passwordEncoder;
+
+    @Resource(name = "mainEngine")
+    private MainEngine mainEngine;
+
+    @PostMapping("/is_auth")
+    public Map<String, Object> isAuth() {
+        Map<String, Object> json = null;
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        boolean authenticated = !auth.getName().equals("anonymousUser");
+        if (auth.getPrincipal() != null)
+            json = MapConverter.convertToHashMap(
+                    new String[] { "username", "auth" },
+                    new Object[] { authenticated ? auth.getName() : null, authenticated });
+        return json;
+    }
 
     @PostMapping("/check_username")
     public String checkUsername(@RequestParam("username") String username) {
@@ -81,9 +103,27 @@ public class DataController {
     @PostMapping("/edit_user_info")
     public void editUserInfo(UserVO userVO) {
         this.userService.editUserInfo(userVO);
-        if (userVO.getPassword() != null)
+        if (userVO.getPassword() != null && !userVO.getPassword().isEmpty())
             this.userDetailsService.changePassword(
                     userVO.getUsername(), userVO.getPassword());
+    }
+
+    @Transactional
+    @PostMapping(value = "/is_valid", produces = "application/text; charset=utf-8")
+    public String isValid(
+            @RequestParam("username") String username,
+            @RequestParam("password") String password) {
+        UserDetails user = this.userDetailsService.loadUserByUsername(username);
+        boolean valid = this.passwordEncoder.matches(password, user.getPassword());
+
+        return String.format("{ \"valid\": %s, \"error\": \"%s\" }",
+                valid, valid ? "" : MessageUtils.getMessage("error.BadCredentials"));
+    }
+
+    @Transactional
+    @PostMapping("/delete_user_info")
+    public void deleteUserInfo(@RequestParam("username") String username) {
+        this.userService.deleteUserInfo(username);
     }
 
     @GetMapping("/playlist_action")
@@ -108,5 +148,31 @@ public class DataController {
             @RequestParam("rating_datetime") String ratingDatetime) {
         this.ratingService.rating(userId, itemId, rating);
         this.userService.updateRatingHistory(userId, ratingDatetime);
+    }
+
+    @GetMapping("/exec")
+    public Map<String, Object> executeServer(@RequestParam("username") String username) {
+        Map<String, Object> json = new HashMap<>();
+        json.put("playlist", null);
+        json.put("serverStarted", false);
+
+        String storeId = this.userService.getStoreId(username);
+
+        if (!this.mainEngine.isStarted(storeId)) {
+            this.mainEngine.init(storeId);
+            while (!this.mainEngine.isUpdatedPlaylist(storeId));
+            json.replace("playlist", this.playlistService.getPlaylist(null));
+            json.replace("serverStarted", true);
+        } else this.mainEngine.destroy(storeId);
+        return json;
+    }
+
+    @GetMapping("/is_started")
+    public boolean isServerStarted(@RequestParam("username") String username) {
+        System.out.println(username);
+        String storeId = this.userService.getStoreId(username);
+        boolean started = this.mainEngine.isStarted(storeId);
+        System.out.println(started);
+        return started;
     }
 }

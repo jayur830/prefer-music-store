@@ -35,4 +35,9 @@ public class UserLogDAOImpl implements UserLogDAO {
         Object result = this.sqlSession.selectOne(namespace + ".getAvgActiveTime", userId);
         return result == null ? 0 : (double) result;
     }
+
+    @Override
+    public void deleteUserLog(@Param("user_id") String userId) {
+        this.sqlSession.delete(namespace + ".deleteUserLog", userId);
+    }
 }

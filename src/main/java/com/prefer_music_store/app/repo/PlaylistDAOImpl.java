@@ -101,12 +101,12 @@ public class PlaylistDAOImpl implements PlaylistDAO {
     }
 
     @Override
-    public void deleteCurrentPlaylist() {
-        this.sqlSession.delete(namespace + ".deleteCurrentPlaylist");
+    public void deleteCurrentPlaylist(@Param("store_id") String storeId) {
+        this.sqlSession.delete(namespace + ".deleteCurrentPlaylist", storeId);
     }
 
     @Override
-    public void insertCurrentSong(@Param("song_id") int songId) {
-        this.sqlSession.insert(namespace + ".insertCurrentSong", songId);
+    public void insertCurrentSong(Map<String, Object> params) {
+        this.sqlSession.insert(namespace + ".insertCurrentSong", params);
     }
 }

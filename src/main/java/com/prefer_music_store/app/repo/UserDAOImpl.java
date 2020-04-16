@@ -41,6 +41,11 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
+    public void deleteUserInfo(@Param("username") String username) {
+        this.sqlSession.delete(namespace + ".deleteUserInfo", username);
+    }
+
+    @Override
     public List<String> getUsers() {
         return this.sqlSession.selectList(namespace + ".getUsers");
     }

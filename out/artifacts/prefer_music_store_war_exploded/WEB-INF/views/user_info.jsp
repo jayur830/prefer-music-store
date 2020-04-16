@@ -1,7 +1,16 @@
 <%@ page import="org.springframework.security.core.Authentication" %>
 <%@ page import="org.springframework.security.core.context.SecurityContextHolder" %>
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <%@ include file="/WEB-INF/include/header.jsp" %>
+<%
+	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+	String username = "";
+	boolean isAdmin = false;
+	if (auth.getPrincipal() != null) {
+		username = auth.getName();
+		isAdmin = auth.getAuthorities().toArray()[0].toString().equals("ROLE_ADMIN");
+	}
+%>
 <html>
 <head>
 	<title>회원정보 수정</title>
@@ -157,11 +166,6 @@
 	<script src="<c:url value="/resources/js/date_format.js"/>"></script>
 	<script src="<c:url value="/resources/js/user.js"/>"></script>
 	<script>
-		<%
-        	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-            String username = "";
-            if (auth.getPrincipal() != null) username = auth.getName();
-        %>
 		user.initUserInfo("${_csrf.parameterName}", "${_csrf.token}", "<%=username%>");
 		let editable = () => {
 			let disabled = $("#password").val() === user.getUserInfo().password &&
@@ -274,10 +278,7 @@
 			return true;
 		};
 
-		$("#delete_user").on("click", () => {
-			if (confirm("회원을 탈퇴하시겠습니까?")) user.deleteUser(
-					"${_csrf.parameterName}", "${_csrf.token}", $("#username").val());
-		});
+		$("#delete_user").on("click", () => location.replace("/delete_user_auth"));
 
 		$("#username, #password, #password_confirm, #name, #birth, #email, input[name=gender], #edit").on("keyup", e => {
 			if (e.keyCode === 13 && validation() && confirm("입력한 정보로 수정하시겠습니까?"))
@@ -295,7 +296,7 @@
 						$("#name").val(), $("#birth").val(), $("#email").val(),
 						parseInt($("input[name=gender]:checked").val()), new Date().getFullYear() + 1 - parseInt($("#birth").val().split("-")[0]));
 		});
-		$("#cancel").on("click", () => location.replace("/"));
+		$("#cancel").on("click", () => location.replace("<%=isAdmin ? "/admin" : "/main"%>"));
 	</script>
 </body>
 </html>

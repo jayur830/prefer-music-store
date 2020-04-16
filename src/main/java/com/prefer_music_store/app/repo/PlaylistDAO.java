@@ -28,6 +28,6 @@ public interface PlaylistDAO {
     void setAgeMaxPreferenceFlag(Map<String, Object> params);
     void setGenderMaxPreferenceFlag(Map<String, Object> params);
 
-    void deleteCurrentPlaylist();
-    void insertCurrentSong(@Param("song_id") int songId);
+    void deleteCurrentPlaylist(@Param("store_id") String storeId);
+    void insertCurrentSong(Map<String, Object> params);
 }

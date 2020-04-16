@@ -11,5 +11,7 @@ public interface UserService {
     boolean existUserByUsernameAndEmail(Map<String, Object> params);
     UserVO getUserInfo(String username);
     void editUserInfo(UserVO userVO);
+    void deleteUserInfo(String username);
     void updateRatingHistory(String userId, String ratingDatetime);
+    String getStoreId(String username);
 }

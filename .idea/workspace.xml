@@ -7,72 +7,379 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af4659c8-d85c-4b68-b303-fe410f354413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/MapConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_clearspring_analytics_stream_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vinhkhuc_jfasttext_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_42.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mashape_unirest_unirest_java_1_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_tdunning_t_digest_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_common_common_image_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_common_common_io_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_common_common_lang_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_bmp_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_core_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_jpeg_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_metadata_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_psd_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_tiff_3_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_el_commons_el_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_aeron_aeron_all_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_42_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_auth_common_3_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_bridge_common_3_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_core_3_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_web_3_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_vertx_vertx_web_common_3_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__it_unimi_dsi_fastutil_6_5_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_agrona_Agrona_0_5_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_artoolkitplus_2_3_1_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_ffmpeg_4_2_1_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flandmark_1_07_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_flycapture_2_13_3_31_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_linux_arm64_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_linux_armhf_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_linux_ppc64le_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_linux_x86_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_linux_x86_64_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_macosx_x86_64_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_platform_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_windows_x86_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_hdf5_windows_x86_64_1_10_5_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_javacv_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_arm64_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_arm_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_x86_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_android_x86_64_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_arm64_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_armhf_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_ppc64le_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_x86_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_linux_x86_64_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_macosx_x86_64_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_platform_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_windows_x86_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_leptonica_windows_x86_64_1_78_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libdc1394_2_2_6_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect2_0_2_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_libfreenect_0_5_7_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense2_2_29_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_librealsense_1_12_4_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_arm64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_arm_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_x86_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_android_x86_64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_ios_arm64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_ios_x86_64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_arm64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_armhf_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_ppc64le_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_x86_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_linux_x86_64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_macosx_x86_64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_platform_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_windows_x86_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_opencv_windows_x86_64_4_1_2_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_tesseract_4_1_0_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bytedeco_videoinput_0_200_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_8_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_8_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_datavec_datavec_api_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_datavec_datavec_data_codec_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_datavec_datavec_data_image_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_datavec_datavec_hadoop_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_arbiter_core_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_arbiter_deeplearning4j_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_arbiter_ui_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_common_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_core_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_datasets_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_datavec_iterators_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_modelimport_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_nlp_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_nn_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_parallel_wrapper_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_tsne_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_ui_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_ui_components_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_ui_model_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_util_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_utility_iterators_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_vertx_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_deeplearning4j_zoo_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_dl4j_examples_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_examples_shared_utilities_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_deeplearning4j_nearestneighbor_core_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_collections_eclipse_collections_7_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_collections_eclipse_collections_api_7_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_collections_eclipse_collections_forkjoin_7_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jcodec_jcodec_0_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_runtime_1_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160212.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lucee_oswego_concurrent_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapdb_elsa_3_0_0_M5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapdb_mapdb_3_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nd4j_nd4j_aeron_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nd4j_nd4j_jackson_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nd4j_nd4j_parameter_server_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nd4j_nd4j_parameter_server_client_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nd4j_nd4j_parameter_server_model_1_0_0_beta6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_swing_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_swing_win_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_threadly_threadly_4_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_2_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_glyphicons_bdd2cbfba0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_notify_3_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_cytoscape_3_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_cytoscape_dagre_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_dagre_0_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_graphlib_1_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_lodash_3_10_1_amd.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bower_popper_js_1_12_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bowergithub_stenin_nikita_open_sans_0_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_chosen_0_9_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_d3js_3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_datatables_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_excanvas_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_explorercanvas_r3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_flot_0_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_font_awesome_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_fullcalendar_1_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_imagesloaded_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_cookie_1_4_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_knob_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_migrate_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_raty_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_sparkline_2_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_ui_1_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_ui_touch_punch_0_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_masonry_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_modernizr_2_8_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_noty_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_babel__polyfill_7_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_bootstrap_4_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_core_js_3_0_0_beta_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_coreui__coreui_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_coreui__icons_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_cytoscape_3_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_cytoscape_cola_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_cytoscape_cose_bilkent_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_cytoscape_euler_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_cytoscape_klay_3_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_cytoscape_spread_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_d3_dispatch_1_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_d3_drag_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_d3_selection_2_0_0_rc_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_d3_timer_1_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_dagre_0_8_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_flatbuffers_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_github_com_jboesch_Gritter_1_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_graphlib_2_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_heap_0_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_jquery_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_klayjs_0_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_lodash_4_17_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_lodash_debounce_4_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_regenerator_runtime_0_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_weaverjs_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_webcola_3_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_retinajs_0_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_uniform_2_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_15_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_compiler_5_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_runtime_5_5_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/prefer_music_store_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/prefer_music_store_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math_2_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/controller/DataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/controller/DataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/engine/MainEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/engine/MainEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/mf/Nd4jMatrixFactorization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/mf/Nd4jMatrixFactorization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/PlaylistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/PlaylistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/PlaylistDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/PlaylistDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserLogDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserLogDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserLogDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserLogDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/PlaylistServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/PlaylistServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/util/UserRFMCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/com/prefer_music_store/app/util/UserRFMCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/log-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/log-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/playlist-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/playlist-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/rating-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/rating-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/user-auth-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/user-auth-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/classes/mappers/user-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/lib/commons-compress-1.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/securityContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/securityContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_password.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_username.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/find_username.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/sign_up.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/user_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/WEB-INF/views/user_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/playlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/playlist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/prefer_music_store_war_exploded/resources/js/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prefer-music-store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prefer-music-store.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/aspect/LoggingAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/controller/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/controller/DataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/engine/MainEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/engine/MainEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/mf/Nd4jMatrixFactorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/mf/Nd4jMatrixFactorization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/Recommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/Recommender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserAuthDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserRatingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserRatingDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserRatingDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserRatingDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginFailureHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/PlaylistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/PlaylistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserRatingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserRatingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserRatingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserRatingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/EmailUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/EmailUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/UserRFMCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/UserRFMCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/log-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/log-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/playlist-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/playlist-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/rating-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/rating-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-auth-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-auth-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/aspect/LoggingAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/controller/DataController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/controller/DataController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/controller/PageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/controller/PageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/engine/MainEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/engine/MainEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/mf/Nd4jMatrixFactorization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/mf/Nd4jMatrixFactorization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/api/Recommender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/PlaylistDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/PlaylistDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/PlaylistDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/PlaylistDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserAuthDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserLogDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserLogDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserLogDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserLogDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/repo/UserRatingDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomAuthenticationProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/CustomUserDetailsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginFailureHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/security/LoginSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/PlaylistServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/PlaylistServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserRatingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/util/UserRFMCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/prefer_music_store/app/util/UserRFMCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/log-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/log-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/playlist-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/playlist-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mappers/rating-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/rating-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mappers/user-auth-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/user-auth-mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/user-mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/include/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/include/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/securityContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/securityContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/find_password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/find_password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/sign_up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/sign_up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/user_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/user_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/resources/js/playlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/playlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/js/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +404,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -104,6 +412,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\Java_Project\prefer-music-store\.idea" />
+      </set>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -124,22 +439,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/resources/audio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15332031" />
+    <property name="project.structure.proportion" value="0.16699219" />
     <property name="project.structure.side.proportion" value="0.26327944" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Java_Project\prefer-music-store\src\main\resources\model" />
       <recent name="F:\Java_Project\prefer-music-store\web\WEB-INF\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Java_Project\prefer-music-store\web\resources\audio" />
-      <recent name="F:\Java_Project\prefer-music-store\src\main\java\com\prefer_music_store\app\util" />
-      <recent name="F:\Java_Project\prefer-music-store\src\main\java\com\prefer_music_store\app\model\mf" />
+      <recent name="F:\Java_Project\prefer-music-store\src\main\resources\mappers" />
+      <recent name="F:\Java_Project\prefer-music-store" />
+      <recent name="F:\Java_Project\prefer-music-store\src\main\java\com\prefer_music_store\app\model\imgproc" />
       <recent name="F:\Java_Project\prefer-music-store\web\WEB-INF\views" />
-      <recent name="F:\Java_Project\prefer-music-store\src\main\java\com\prefer_music_store\app\util\ml\mf" />
+      <recent name="F:\Java_Project\prefer-music-store\web\resources\audio" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.prefer_music_store.app.repo" />
@@ -219,7 +535,7 @@
     </configuration>
     <configuration name="Tomcat 8.5.51" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.51" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 -Djava.library.path=&quot;C:\opencv\build\java\x64&quot;" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="prefer-music-store:war exploded">
@@ -393,7 +709,19 @@
       <workItem from="1585993516900" duration="8027000" />
       <workItem from="1586037263357" duration="5298000" />
       <workItem from="1586054079721" duration="613000" />
-      <workItem from="1586125276733" duration="12607000" />
+      <workItem from="1586125276733" duration="13073000" />
+      <workItem from="1586258539414" duration="5176000" />
+      <workItem from="1586314705191" duration="656000" />
+      <workItem from="1586393098859" duration="28452000" />
+      <workItem from="1586445834660" duration="5192000" />
+      <workItem from="1586492957575" duration="12927000" />
+      <workItem from="1586526373825" duration="3678000" />
+      <workItem from="1586577238233" duration="15985000" />
+      <workItem from="1586606129671" duration="12000" />
+      <workItem from="1586870295961" duration="4814000" />
+      <workItem from="1586925200703" duration="770000" />
+      <workItem from="1586946729605" duration="2634000" />
+      <workItem from="1587013181216" duration="6097000" />
     </task>
     <servers />
   </component>
@@ -405,22 +733,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1585422347090" />
-    <state x="552" y="178" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585951410468">
+    <state x="552" y="178" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586449747352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585951410468" />
-    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586125361869">
+    <state x="552" y="178" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586449747352" />
+    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586412264422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586125361869" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1585806233190">
+    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586412264422" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1586874857879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585806233190" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586874857879" />
     <state x="587" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585345690840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="587" y="198" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585345690840" />
+    <state x="790" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1586447627211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586447627211" />
     <state x="751" y="378" width="444" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585508509569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -433,58 +765,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585489371928" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586054090063">
+    <state x="1115" y="316" key="FileChooserDialogImpl" timestamp="1586961890391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586054090063" />
-    <state width="1877" height="660" key="GridCell.Tab.0.bottom" timestamp="1586148186418">
+    <state x="1115" y="316" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586961890391" />
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186418" />
-    <state width="1877" height="660" key="GridCell.Tab.0.center" timestamp="1586148186418">
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186418" />
-    <state width="1877" height="660" key="GridCell.Tab.0.left" timestamp="1586148186417">
+    <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186417" />
-    <state width="1877" height="660" key="GridCell.Tab.0.right" timestamp="1586148186418">
+    <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186418" />
-    <state width="1877" height="660" key="GridCell.Tab.1.bottom" timestamp="1586148186419">
+    <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186419" />
-    <state width="1877" height="660" key="GridCell.Tab.1.center" timestamp="1586148186418">
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186418" />
-    <state width="1877" height="660" key="GridCell.Tab.1.left" timestamp="1586148186418">
+    <state width="1877" height="393" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186418" />
-    <state width="1877" height="660" key="GridCell.Tab.1.right" timestamp="1586148186419">
+    <state width="1877" height="393" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186419" />
-    <state width="1877" height="660" key="GridCell.Tab.2.bottom" timestamp="1586148186420">
+    <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.2.bottom" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186420" />
-    <state width="1877" height="660" key="GridCell.Tab.2.center" timestamp="1586148186419">
+    <state width="1877" height="393" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.2.center" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186419" />
-    <state width="1877" height="660" key="GridCell.Tab.2.left" timestamp="1586148186419">
+    <state width="1877" height="393" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.2.left" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186419" />
-    <state width="1877" height="660" key="GridCell.Tab.2.right" timestamp="1586148186419">
+    <state width="1877" height="393" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
+    <state width="1877" height="393" key="GridCell.Tab.2.right" timestamp="1586972146124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="660" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586148186419" />
+    <state width="1877" height="393" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586972146124" />
     <state width="1439" height="452" key="GridCell.Tab.3.bottom" timestamp="1585606536118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -501,10 +833,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1439" height="452" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585606536118" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1585529632249">
+    <state x="440" y="94" width="1311" height="851" key="SettingsEditor" timestamp="1586447642271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585529632249" />
+    <state x="440" y="94" width="1311" height="851" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586447642271" />
     <state x="722" y="417" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1585424592103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -517,10 +849,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="284" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585803675161" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1586172546357">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1586872564062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586172546357" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586872564062" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585576093793">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

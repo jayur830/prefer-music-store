@@ -44,4 +44,10 @@
             where username = #{username}
         ]]>
     </update>
+
+    <delete id="deleteUserAuthInfo" parameterType="string">
+        <![CDATA[
+            delete from user_auth where username = #{username}
+        ]]>
+    </delete>
 </mapper>

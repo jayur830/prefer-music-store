@@ -166,13 +166,14 @@
                     parseInt($("input[name=gender]:checked").val()),
                     new Date().getFullYear() + 1 - parseInt($("#birth").val().split("-")[0]));
         });
-        $("#cancel").on("click", () => location.replace("/login"));
+        $("#cancel").on("click", () => location.replace("/"));
 
         $("#username_valid").on("click", function () {
             const username = $("#username").val();
             if (username === "") alert("아이디를 입력하고 중복확인하세요.");
             else {
                 user.checkUsername("${_csrf.parameterName}", "${_csrf.token}", username);
+                $(this).attr("disabled", true);
                 $(this).removeClass("btn_dark_light");
                 $(this).addClass("btn_disabled");
             }

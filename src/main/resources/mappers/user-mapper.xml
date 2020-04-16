@@ -39,6 +39,12 @@
         ]]>
     </update>
 
+    <delete id="deleteUserInfo" parameterType="string">
+        <![CDATA[
+            delete from user where username = #{username}
+        ]]>
+    </delete>
+
     <select id="getUsers" resultType="string">
         <![CDATA[
             select username from user

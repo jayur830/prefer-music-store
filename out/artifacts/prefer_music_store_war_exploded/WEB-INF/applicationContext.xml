@@ -92,6 +92,6 @@
           p:randomRecommendAlgorithm-ref="playlistRandomRecommendAlgorithm" />
 
     <!-- Background Engine -->
-    <bean id="mainEngine" class="com.prefer_music_store.app.engine.MainEngine" init-method="init" destroy-method="destroy" />
+    <bean id="mainEngine" class="com.prefer_music_store.app.engine.MainEngine" />
 
 </beans>

@@ -76,6 +76,7 @@ public class UserHistoryPlaylistRecommendAlgorithm implements PlaylistRecommendA
         this.rfmScores.clear();
         // 현재 로그인한 유저들의 아이디들을 DB로부터 모조리 가져온다.
         List<String> users = this.userLogDAO.getCurrentLoginUsers();
+
         // 현재 로그인한 유저들을 모두 탐색한다.
         for (String userId : users) {
             // 특정 유저에 대한 이력 데이터를 가져온다.

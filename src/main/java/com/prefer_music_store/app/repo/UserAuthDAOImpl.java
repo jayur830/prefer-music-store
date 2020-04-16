@@ -50,4 +50,9 @@ public class UserAuthDAOImpl implements UserAuthDAO {
     public void updatePassword(Map<String, Object> params) {
         this.sqlSession.update(namespace + ".updatePassword", params);
     }
+
+    @Override
+    public void deleteUserAuthInfo(@Param("username") String username) {
+        this.sqlSession.delete(namespace + ".deleteUserAuthInfo", username);
+    }
 }

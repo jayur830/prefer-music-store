@@ -10,4 +10,5 @@ public interface UserLogDAO {
     void setLogoutDatetime(Map<String, Object> params);
     List<String> getCurrentLoginUsers();
     double getAvgActiveTime(@Param("user_id") String userId);
+    void deleteUserLog(@Param("user_id") String userId);
 }

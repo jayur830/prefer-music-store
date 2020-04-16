@@ -142,15 +142,15 @@
         ]]>
     </update>
 
-    <delete id="deleteCurrentPlaylist">
+    <delete id="deleteCurrentPlaylist" parameterType="string">
         <![CDATA[
-            delete from current_playlist
+            delete from current_playlist where store_id = #{store_id}
         ]]>
     </delete>
 
-    <insert id="insertCurrentSong" parameterType="int">
+    <insert id="insertCurrentSong" parameterType="map">
         <![CDATA[
-            insert into current_playlist values (#{song_id})
+            insert into current_playlist values (#{song_id}, #{store_id})
         ]]>
     </insert>
 </mapper>

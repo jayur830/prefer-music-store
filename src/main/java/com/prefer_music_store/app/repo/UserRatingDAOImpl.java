@@ -1,5 +1,6 @@
 package com.prefer_music_store.app.repo;
 
+import org.apache.ibatis.annotations.Param;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -27,6 +28,11 @@ public class UserRatingDAOImpl implements UserRatingDAO {
     @Override
     public void updateRating(Map<String, Object> params) {
         this.sqlSession.update(namespace + ".updateRating", params);
+    }
+
+    @Override
+    public void deleteUserRating(@Param("user_id") String userId) {
+        this.sqlSession.delete(namespace + ".deleteUserRating", userId);
     }
 
     @Override

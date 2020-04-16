@@ -49,18 +49,17 @@
 	<script src="<c:url value="/resources/js/user.js"/>"></script>
 	<script>
 		const findPassword = () => {
-			const email = $("#email").val();
+			const username = $("#username").val(), email = $("#email").val();
 
+			if (username === "") alert("아이디를 입력해주세요.");
 			// 이메일이 유효하지 않은 경우
-			if (!/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i.test(email))
+			else if (!/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i.test(email))
 				alert("올바른 이메일 주소를 입력해주세요.");
 			else {
 				$(".placeholder").addClass("placeholder_up");
 				$(".placeholder").removeClass("placeholder");
 				$("#username, #email, #find_password, #cancel").attr("disabled", true);
-				user.findPassword(
-						"${_csrf.parameterName}", "${_csrf.token}",
-						$("#username").val(), email);
+				user.findPassword("${_csrf.parameterName}", "${_csrf.token}", username, email);
 			}
 		};
 

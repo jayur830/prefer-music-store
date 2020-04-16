@@ -26,4 +26,10 @@
             from user_log where user_id = #{user_id} and logout is not null
         ]]>
     </select>
+
+    <delete id="deleteUserLog" parameterType="string">
+        <![CDATA[
+            delete from user_log where user_id = #{user_id}
+        ]]>
+    </delete>
 </mapper>

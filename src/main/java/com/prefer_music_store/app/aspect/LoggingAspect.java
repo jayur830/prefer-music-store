@@ -1,6 +1,7 @@
 package com.prefer_music_store.app.aspect;
 
 import com.prefer_music_store.app.repo.PlaylistDAO;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
@@ -73,5 +74,12 @@ public class LoggingAspect {
         System.out.println("\n[Ratings]");
         for (Map<String, Object> rating : list)
             System.out.println(rating);
+    }
+
+    @AfterReturning(value = "execution(* *..AgeGenderPlaylistRecommendAlgorithm.norm(..))", returning = "item")
+    public void printAfterReturningAgeGenderNorm(Map<String, Object> item) {
+        System.out.println("[Normalization]");
+        for (Map.Entry<String, Object> i : item.entrySet())
+            System.out.println(String.format("%s: %.4f", i.getKey(), (double) i.getValue()));
     }
 }

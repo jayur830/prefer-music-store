@@ -1,11 +1,18 @@
 package com.prefer_music_store.app.model.recommendation.algo;
 
+import com.prefer_music_store.app.model.imgproc.AgeGenderEstimation;
+import com.prefer_music_store.app.model.imgproc.FaceDetection;
 import com.prefer_music_store.app.repo.PlaylistDAO;
 import com.prefer_music_store.app.repo.UserRatingDAO;
 import com.prefer_music_store.app.repo.UserVO;
 import com.prefer_music_store.app.util.MapConverter;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.factory.Nd4j;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+import org.opencv.core.Rect;
+import org.opencv.highgui.HighGui;
+import org.opencv.imgcodecs.Imgcodecs;
 
 import javax.annotation.Resource;
 import java.util.*;
@@ -23,6 +30,11 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
     private UserRatingDAO ratingDAO;
     @Resource(name = "userTable")
     private Map<String, UserVO> userTable;
+
+    @Resource(name = "ageGenderEstimation")
+    private AgeGenderEstimation ageGenderEstimation;
+    @Resource(name = "faceDetection")
+    private FaceDetection faceDetection;
 
     @Override
     public void setRatio(double ratioValue) {
@@ -43,16 +55,35 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
         // 6 * 2의 0으로 채워진 행렬을 먼저 생성한다.
         // ageGenderRatio: 6행 2열의 행렬로써 6개의 행은 연령대를, 2개의 열은 성별을, 그리고 각각의 위치의 값들은 해당 나이와 성별에 해당하는 인원 수를 의미한다.
         this.ageGenderRatio = Nd4j.zeros(6, 2);
-        // userTable: 현재 로그인한 유저들의 상태 정보를 모아놓은 테이블
-        // 테이블 내 모든 유저들의 정보로부터 나이와 성별 정보 추출
-        for (Map.Entry<String, UserVO> iter : this.userTable.entrySet()) {
-            // 특정 유저 정보를 얻어온다.
-            UserVO user = iter.getValue();
-            // 특정 유저 정보에서 나이와 성별만을 얻어온다.
-            int age = user.getGender(), gender = user.getGender();
+
+//        // userTable: 현재 로그인한 유저들의 상태 정보를 모아놓은 테이블
+//        // 테이블 내 모든 유저들의 정보로부터 나이와 성별 정보 추출
+//        for (Map.Entry<String, UserVO> iter : this.userTable.entrySet()) {
+//            // 특정 유저 정보를 얻어온다.
+//            UserVO user = iter.getValue();
+//            // 특정 유저 정보에서 나이와 성별만을 얻어온다.
+//            int age = user.getGender(), gender = user.getGender();
+//            // ageGenderRatio 행렬에서 기존의 age 행, gender 열 위치에 있던 값을 1 증가시킨다.
+//            this.ageGenderRatio.putScalar(new int[] { age, gender }, this.ageGenderRatio.getInt(age, gender) + 1);
+//        }
+
+        Mat image = getImage();
+        List<Rect> detectedObjects = this.faceDetection.predict(image);
+        for (Rect rect : detectedObjects) {
+            Mat face = new Mat(rect.height, rect.width, CvType.CV_8UC3);
+            for (int i = 0; i < face.rows(); ++i)
+                for (int j = 0; j < face.cols(); ++j)
+                    face.put(i, j, image.get(i + rect.y, j + rect.x));
+            int[] ageGender = this.ageGenderEstimation.predict(face);
+            int age = ageGender[1], gender = ageGender[0];
+
+            System.out.printf("age: %d, gender: %smale\n", age, gender == 0 ? "fe" : "");
+
             // ageGenderRatio 행렬에서 기존의 age 행, gender 열 위치에 있던 값을 1 증가시킨다.
-            this.ageGenderRatio.putScalar(new int[] { age, gender }, this.ageGenderRatio.getInt(age, gender) + 1);
+            this.ageGenderRatio.putScalar(new int[] { age / 10 - 1, gender }, this.ageGenderRatio.getInt(age / 10 - 1, gender) + 1);
         }
+
+        System.out.println(this.ageGenderRatio);
     }
 
     @Override
@@ -78,6 +109,7 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
         for (Map.Entry<Integer, int[]> iter : indexMapper.entrySet()) {
             // 2개의 원소를 갖는 1차원 배열, 0번째는 나이, 1번째는 성별에 해당
             int[] indexes = iter.getValue();
+
             // 해당 나이와 성별에 대한 인원 수
             int count = iter.getKey();
 
@@ -106,6 +138,10 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
         checkPreferenceDistribution();
         // 선호도 내에서 가장 높은 비율의 성별, 나이로 플래그 값을 갱신한다.
         setFlagsPreferenceDistribution(itemIdList);
+    }
+
+    private Mat getImage() {
+        return Imgcodecs.imread(getClass().getResource("/model/sample.jpg").getFile().substring(1));
     }
 
     private Set<Integer> updatePreferenceDistribution() {
@@ -182,11 +218,11 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
         // 벡터의 최솟값과 최댓값을 구한다.
         double min = (double) vector.minNumber(), max = (double) vector.maxNumber();
         // 벡터의 모든 원소에서 벡터의 최솟값을 뺀다.
-        vector.sub(min);
+        vector = vector.sub(min);
         // 벡터의 모든 원소에 ((재조정하려는 범위의 최댓값 - 재조정하려는 범위의 최솟값) / (벡터의 최댓값 - 벡터의 최솟값)) 을 곱한다.
-        vector.mul((this.MAX - this.MIN) / (max - min));
+        vector = vector.mul((this.MAX - this.MIN) / (max - min));
         // 벡터의 모든 원소에 재조정하려는 범위의 최솟값을 더한다.
-        vector.add(this.MIN);
+        vector = vector.add(this.MIN);
 
         for (int i = 0; i < keyNames.length; ++i)
             item.replace(keyNames[i], vector.getDouble(0, i));

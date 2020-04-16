@@ -13,7 +13,10 @@
 
     <!-- Http security setting -->
     <http auto-config="true">
+        <intercept-url pattern="/admin" access="hasRole('ROLE_ADMIN')" />
         <intercept-url pattern="/**" access="permitAll()" />
+
+        <csrf disabled="true" />
 
         <form-login username-parameter="username"
                     password-parameter="password"
@@ -51,9 +54,4 @@
         <beans:constructor-arg name="idForEncode" value="bcrypt" />
         <beans:constructor-arg name="idToPasswordEncoder" ref="encoders" />
     </beans:bean>
-
-<!--    <beans:bean id="authenticationProvider" class="com.prefer_music_store.app.security.CustomAuthenticationProvider" />-->
-<!--    <beans:bean id="userDetailsService" class="com.prefer_music_store.app.security.CustomUserDetailsService" />-->
-<!--    <beans:bean id="loginFailureHandler" class="com.prefer_music_store.app.security.LoginFailureHandler" />-->
-<!--    <beans:bean id="loginSuccessHandler" class="com.prefer_music_store.app.security.LoginSuccessHandler" />-->
 </beans:beans>
