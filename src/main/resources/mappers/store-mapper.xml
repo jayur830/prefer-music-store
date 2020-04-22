@@ -7,4 +7,10 @@
             select store_id from store where username = #{username}
         ]]>
     </select>
+
+    <select id="getStores" resultType="map">
+        <![CDATA[
+            select store_id, latitude, longitude from store;
+        ]]>
+    </select>
 </mapper>

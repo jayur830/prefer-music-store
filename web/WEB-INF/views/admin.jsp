@@ -164,7 +164,7 @@
                     if (data.serverStarted) {
                         alert("서버가 실행되었습니다.");
                         $("#exec").val("서버 중지");
-                        $("#list").html(playlistToString(null, <%=authentication%>, <%=isAdmin%>, data.playlist));
+                        $("#list").html(playlistToString(null, data.playlist));
                     } else {
                         alert("서버가 중지되었습니다.");
                         $("#exec").val("서버 시작");
@@ -184,16 +184,16 @@
         });
         $("#user_info").on("click", () => location.replace("/user_info"));
 
-        $(document).ready(() => getCurrentPlaylist(null, <%=authentication%>, <%=isAdmin%>));
+        $(document).ready(() => getAdminPlaylist("<%=username%>"));
 
         $("#search").on("keyup", () => {
             const keyword = $("#search").val();
-            if (keyword === "") getCurrentPlaylist(null, <%=authentication%>, <%=isAdmin%>);
+            if (keyword === "") getCurrentPlaylist("<%=username%>");
             else $.get("search_action", {
-                    username: "<%=username%>" === "" ? null : "<%=username%>",
+                    username: null,
                     keyword: keyword
                 }).done(playlist => {
-                    if (playlist != null) $("#list").html(playlistToString(null, <%=authentication%>, <%=isAdmin%>, playlist));
+                    if (playlist != null) $("#list").html(playlistToString(null, playlist));
                 }).fail(e => {
                     console.log(e);
                     alert("Failed to connect to server.");

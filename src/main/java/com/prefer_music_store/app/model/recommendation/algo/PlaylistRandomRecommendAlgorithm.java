@@ -26,6 +26,9 @@ public class PlaylistRandomRecommendAlgorithm implements RandomRecommendAlgorith
     public void initFeatures() {}
 
     @Override
+    public void initFeatures(Object param) {}
+
+    @Override
     public List<Object> predict() {
         List<Object> list = new ArrayList<>();
         int n = this.random.nextInt(100);

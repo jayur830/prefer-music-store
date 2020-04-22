@@ -2,14 +2,10 @@ package com.prefer_music_store.app.security;
 
 import com.prefer_music_store.app.repo.UserAuthDAO;
 import com.prefer_music_store.app.repo.UserDAO;
-import com.prefer_music_store.app.repo.UserLogDAO;
 import com.prefer_music_store.app.repo.UserVO;
-import com.prefer_music_store.app.util.MapConverter;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.WebAttributes;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
-import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
-import org.springframework.security.web.savedrequest.SavedRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,22 +14,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 
 @Component
 public class LoginSuccessHandler implements AuthenticationSuccessHandler {
-    @Resource(name = "userLogDAO")
-    private UserLogDAO userLogDAO;
     @Resource(name = "userDAO")
     private UserDAO userDAO;
     @Resource(name = "userAuthDAO")
     private UserAuthDAO userAuthDAO;
-    @Resource(name = "dateFormat")
-    private DateFormat dateFormat;
     @Resource(name = "userTable")
     private Map<String, UserVO> userTable;
 
@@ -50,12 +38,6 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
         boolean isAdmin = auth.getAuthorities().toArray()[0].toString().equals("ROLE_ADMIN");
 
         if (!isAdmin) {
-            // 현재 로그인한 해당 유저의 로그인 시간을 DB에 반영한다.
-            this.userLogDAO.setLoginDatetime(
-                    MapConverter.convertToHashMap(
-                            new String[]{"username", "login_datetime"},
-                            new Object[]{username, this.dateFormat.format(new Date())}));
-
             // userTable: 현재 로그인한 유저들의 상태 정보를 모아놓은 테이블
             // 로그인에 성공하였으므로 해당 유저를 userTable에 추가한다.
             this.userTable.put(username, this.userDAO.getUserInfo(username));

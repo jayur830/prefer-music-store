@@ -6,10 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 public interface PlaylistDAO {
-    List<Map<String, Object>> getCurrentPlaylistAndRatings(@Param("username") String username);
-    List<Map<String, Object>> getCurrentPlaylistAndRatingsByKeyword(Map<String, Object> params);
-    List<Map<String, Object>> getCurrentPlaylist();
-    List<Map<String, Object>> getCurrentPlaylistByKeyword(@Param("keyword") String keyword);
+    Map<String, Object> getUserPlaylistAndRatingsOfUser(Map<String, Object> params);
+    List<Map<String, Object>> getPlaylistAndRatingsByKeywordOfUser(Map<String, Object> params);
+    List<Map<String, Object>> getCurrentStorePlaylist(@Param("store_id") String storeId);
+    List<Map<String, Object>> getCurrentStorePlaylistAndRatingsOfUser(Map<String, Object> params);
+    List<Map<String, Object>> getPlaylistByKeyword(@Param("keyword") String keyword);
 
     List<Integer> getSongsByAgeGender(Map<String, Object> params);
 
@@ -28,6 +29,7 @@ public interface PlaylistDAO {
     void setAgeMaxPreferenceFlag(Map<String, Object> params);
     void setGenderMaxPreferenceFlag(Map<String, Object> params);
 
+    void deleteCurrentPlaylist();
     void deleteCurrentPlaylist(@Param("store_id") String storeId);
     void insertCurrentSong(Map<String, Object> params);
 }

@@ -50,20 +50,4 @@
             select username from user
         ]]>
     </select>
-
-    <select id="getRatingHistory" resultType="map">
-        <![CDATA[
-            select date_format(recent_rating_datetime, '%Y-%m-%d %H:%i:%s') "recent_rating_datetime",
-                   rating_count from user where username = #{username}
-        ]]>
-    </select>
-
-    <update id="updateRatingHistory" parameterType="map">
-        <![CDATA[
-            update user
-            set recent_rating_datetime = #{rating_datetime},
-                rating_count = rating_count + 1
-            where username = #{user_id}
-        ]]>
-    </update>
 </mapper>

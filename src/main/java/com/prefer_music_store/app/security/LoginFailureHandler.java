@@ -19,7 +19,6 @@ public class LoginFailureHandler implements AuthenticationFailureHandler {
     @Resource(name = "userAuthDAO")
     private UserAuthDAO userAuthDAO;
 
-//    @Transactional
     @Override
     public void onAuthenticationFailure(
             HttpServletRequest request,

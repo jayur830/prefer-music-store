@@ -15,6 +15,9 @@ public interface PlaylistRecommendAlgorithm extends RecommendAlgorithm {
     void initFeatures();
 
     @Override
+    void initFeatures(Object param);
+
+    @Override
     List<Object> predict();
 
     @Override

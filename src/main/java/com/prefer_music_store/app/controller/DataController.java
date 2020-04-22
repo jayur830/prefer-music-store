@@ -45,10 +45,11 @@ public class DataController {
         Map<String, Object> json = null;
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         boolean authenticated = !auth.getName().equals("anonymousUser");
+        String authority = auth.getAuthorities().toArray()[0].toString();
         if (auth.getPrincipal() != null)
             json = MapConverter.convertToHashMap(
-                    new String[] { "username", "auth" },
-                    new Object[] { authenticated ? auth.getName() : null, authenticated });
+                    new String[] { "username", "auth", "authority" },
+                    new Object[] { authenticated ? auth.getName() : null, authenticated, authority });
         return json;
     }
 
@@ -126,9 +127,23 @@ public class DataController {
         this.userService.deleteUserInfo(username);
     }
 
-    @GetMapping("/playlist_action")
-    public List<Map<String, Object>> playlistAction(@RequestParam("username") String username) {
-        return this.playlistService.getPlaylist(username);
+    @GetMapping("/admin_playlist_action")
+    public List<Map<String, Object>> adminPlaylistAction(@RequestParam("username") String username) {
+        return this.playlistService.getAdminStorePlaylist(username);
+    }
+
+    @GetMapping("/current_playlist_action")
+    public List<Map<String, Object>> currentPlaylistAction(
+            @RequestParam("username") String username,
+            @RequestParam("latitude") double latitude,
+            @RequestParam("longitude") double longitude) {
+        System.out.println("username: " + (username.isEmpty() ? "empty" : username));
+        return this.playlistService.getCurrentStorePlaylist(username.isEmpty() ? null : username, latitude, longitude);
+    }
+
+    @GetMapping("/user_playlist_action")
+    public List<Map<String, Object>> userPlaylistAction(@RequestParam("username") String username) {
+        return this.playlistService.getUserPlaylist(username);
     }
 
     @Transactional
@@ -144,10 +159,8 @@ public class DataController {
     public void ratingAction(
             @RequestParam("user_id") String userId,
             @RequestParam("item_id") String itemId,
-            @RequestParam("rating") double rating,
-            @RequestParam("rating_datetime") String ratingDatetime) {
+            @RequestParam("rating") double rating) {
         this.ratingService.rating(userId, itemId, rating);
-        this.userService.updateRatingHistory(userId, ratingDatetime);
     }
 
     @GetMapping("/exec")
@@ -161,7 +174,7 @@ public class DataController {
         if (!this.mainEngine.isStarted(storeId)) {
             this.mainEngine.init(storeId);
             while (!this.mainEngine.isUpdatedPlaylist(storeId));
-            json.replace("playlist", this.playlistService.getPlaylist(null));
+            json.replace("playlist", this.playlistService.getAdminStorePlaylist(username));
             json.replace("serverStarted", true);
         } else this.mainEngine.destroy(storeId);
         return json;

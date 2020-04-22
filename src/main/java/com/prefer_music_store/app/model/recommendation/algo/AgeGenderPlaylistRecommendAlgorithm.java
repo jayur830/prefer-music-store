@@ -11,8 +11,6 @@ import org.nd4j.linalg.factory.Nd4j;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Rect;
-import org.opencv.highgui.HighGui;
-import org.opencv.imgcodecs.Imgcodecs;
 
 import javax.annotation.Resource;
 import java.util.*;
@@ -47,7 +45,10 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
     }
 
     @Override
-    public void initFeatures() {
+    public void initFeatures() {}
+
+    @Override
+    public void initFeatures(Object param) {
         /**
          * 1. 현재 접속중인 세션별 유저들로부터 성별 및 연령대 정보를 가져온다.
          * 2. 성별 및 연령대의 비율을 알아내어 6 * 2 행렬로 초기화한다.
@@ -56,18 +57,7 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
         // ageGenderRatio: 6행 2열의 행렬로써 6개의 행은 연령대를, 2개의 열은 성별을, 그리고 각각의 위치의 값들은 해당 나이와 성별에 해당하는 인원 수를 의미한다.
         this.ageGenderRatio = Nd4j.zeros(6, 2);
 
-//        // userTable: 현재 로그인한 유저들의 상태 정보를 모아놓은 테이블
-//        // 테이블 내 모든 유저들의 정보로부터 나이와 성별 정보 추출
-//        for (Map.Entry<String, UserVO> iter : this.userTable.entrySet()) {
-//            // 특정 유저 정보를 얻어온다.
-//            UserVO user = iter.getValue();
-//            // 특정 유저 정보에서 나이와 성별만을 얻어온다.
-//            int age = user.getGender(), gender = user.getGender();
-//            // ageGenderRatio 행렬에서 기존의 age 행, gender 열 위치에 있던 값을 1 증가시킨다.
-//            this.ageGenderRatio.putScalar(new int[] { age, gender }, this.ageGenderRatio.getInt(age, gender) + 1);
-//        }
-
-        Mat image = getImage();
+        Mat image = (Mat) param;
         List<Rect> detectedObjects = this.faceDetection.predict(image);
         for (Rect rect : detectedObjects) {
             Mat face = new Mat(rect.height, rect.width, CvType.CV_8UC3);
@@ -138,10 +128,6 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
         checkPreferenceDistribution();
         // 선호도 내에서 가장 높은 비율의 성별, 나이로 플래그 값을 갱신한다.
         setFlagsPreferenceDistribution(itemIdList);
-    }
-
-    private Mat getImage() {
-        return Imgcodecs.imread(getClass().getResource("/model/sample.jpg").getFile().substring(1));
     }
 
     private Set<Integer> updatePreferenceDistribution() {

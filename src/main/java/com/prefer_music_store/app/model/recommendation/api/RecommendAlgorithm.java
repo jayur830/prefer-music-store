@@ -6,6 +6,7 @@ public interface RecommendAlgorithm {
     void setRatio(double ratioValue);
     double getRatio();
     void initFeatures();
+    void initFeatures(Object param);
     List<Object> predict();
     void update();
 }

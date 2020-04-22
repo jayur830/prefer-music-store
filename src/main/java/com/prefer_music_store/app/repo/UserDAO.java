@@ -13,6 +13,4 @@ public interface UserDAO {
     void editUserInfo(UserVO userVO);
     void deleteUserInfo(@Param("username") String username);
     List<String> getUsers();
-    Map<String, Object> getRatingHistory(@Param("username") String username);
-    void updateRatingHistory(Map<String, Object> params);
 }

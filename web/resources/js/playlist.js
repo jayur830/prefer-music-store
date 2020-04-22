@@ -17,7 +17,7 @@ let isPlaying = false, play = id => {
     }
 };
 
-const playlistToString = (userId, auth, isAdmin, playlist) => {
+const playlistToString = (userId, playlist) => {
     let htmlStr = "";
     for (let i = 0; i < playlist.length; ++i) {
         const songId = playlist[i].song_id,
@@ -37,7 +37,7 @@ const playlistToString = (userId, auth, isAdmin, playlist) => {
                     <div class="text_over" style="font-size: 100%; font-weight: bold;">${songName}</div>
                     <div class="text_over" style="font-size: 70%;">${artist}</div>
                 </td>`;
-        if (auth && !isAdmin) {
+        if (userId != null) {
             htmlStr += `<td id="r${songId}" class="element range">`;
             for (let j = 0; j < 5; ++j)
                 htmlStr += `<span class="fa${rating === 0 ? "l" : (j < rating ? "s" : "l")} fa-star fa-2x rating" 
@@ -49,10 +49,34 @@ const playlistToString = (userId, auth, isAdmin, playlist) => {
     return htmlStr;
 };
 
-const getCurrentPlaylist = (username, auth, isAdmin) =>
-    $.get("/playlist_action", { username: username === "" || username === null ? null : username })
+const getAdminPlaylist = adminUsername => {
+    $.get("/admin_playlist_action", { username: adminUsername })
         .done(playlist => {
-            if (playlist != null) $("#list").html(playlistToString(username, auth, isAdmin, playlist));
+            if (playlist != null) $("#list").html(playlistToString(null, playlist));
+        }).fail(e => {
+            console.log(e);
+            alert("Failed to connect to server.");
+        });
+};
+
+const getCurrentPlaylist = () => {
+    if (navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(position =>
+            $.get("/current_playlist_action", {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude
+            }).done(playlist => {
+                if (playlist != null) $("#list").html(playlistToString(null, playlist));
+            }).fail(e => {
+                console.log(e);
+                alert("Failed to connect to server.");
+            }));
+};
+
+const getUserPlaylist = username =>
+    $.get("/user_playlist_action", { username })
+        .done(playlist => {
+            if (playlist != null) $("#list").html(playlistToString(username, playlist));
         }).fail(e => {
             console.log(e);
             alert("Failed to connect to server.");
@@ -63,8 +87,7 @@ const playlistUpdate = (userId, itemId, rating) => {
         $.get("/rating_action", {
             user_id: userId,
             item_id: itemId,
-            rating: rating,
-            rating_datetime: new Date().format("yyyy-MM-dd HH:mm:ss")
+            rating: rating
         }).done(() => {
             let star = $("#r" + itemId).find(".fa-star");
             star.removeClass("fas");

@@ -2,20 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mappers.PlaylistMapper">
-    <select id="getCurrentPlaylistAndRatings" resultType="map">
+    <select id="getUserPlaylistAndRatingsOfUser" resultType="map">
         <![CDATA[
             select distinct a.song_id, a.artist, a.song_name, ifnull(b.rating, 0) "rating"
-            from (select playlist.song_id, artist, song_name from playlist, current_playlist
-                  where playlist.song_id = current_playlist.song_id) a
-                     left outer join (select artist, song_name, rating from playlist, current_playlist, user_rating
-                                      where playlist.song_id = current_playlist.song_id
-                                        and user_rating.item_id = current_playlist.song_id
-                                        and user_id = #{username}) b
+            from (select song_id, artist, song_name from playlist
+                  where song_id = #{item_id}) a
+                     left outer join (select artist, song_name, rating from playlist, user_rating
+                                      where user_id = #{user_id} and item_id = #{item_id}) b
                          on a.artist = b.artist and a.song_name = b.song_name
         ]]>
     </select>
 
-    <select id="getCurrentPlaylistAndRatingsByKeyword" resultType="map">
+    <select id="getPlaylistAndRatingsByKeywordOfUser" resultType="map">
         <![CDATA[
             select distinct a.song_id, a.artist, a.song_name, ifnull(b.rating, 0) "rating"
             from (select song_id, artist, song_name from playlist
@@ -25,15 +23,28 @@
         ]]>
     </select>
 
-    <select id="getCurrentPlaylist" resultType="map">
+    <select id="getCurrentStorePlaylist" resultType="map">
         <![CDATA[
             select playlist.song_id, artist, song_name
-            from playlist, current_playlist
+            from playlist, current_playlist, store
             where playlist.song_id = current_playlist.song_id
+            and store.store_id = current_playlist.store_id
+            and store.store_id = #{store_id}
         ]]>
     </select>
 
-    <select id="getCurrentPlaylistByKeyword" resultType="map">
+    <select id="getCurrentStorePlaylistAndRatingsOfUser" resultType="map">
+        <![CDATA[
+            select distinct a.song_id, a.artist, a.song_name, ifnull(b.rating, 0) "rating"
+            from (select playlist.song_id, artist, song_name from playlist, current_playlist
+                  where playlist.song_id = current_playlist.song_id and current_playlist.store_id = #{store_id}) a
+                     left outer join (select artist, song_name, rating from playlist, user_rating
+                                      where user_id = #{user_id} and playlist.song_id = user_rating.item_id) b
+                                     on a.artist = b.artist and a.song_name = b.song_name
+        ]]>
+    </select>
+
+    <select id="getPlaylistByKeyword" resultType="map">
         <![CDATA[
             select distinct song_id, artist, song_name from playlist
             where artist like "%${keyword}%" or song_name like "%${keyword}%"
@@ -141,6 +152,12 @@
             where song_id = #{item_id}
         ]]>
     </update>
+
+    <delete id="deleteCurrentPlaylistAll">
+        <![CDATA[
+            delete from current_playlist
+        ]]>
+    </delete>
 
     <delete id="deleteCurrentPlaylist" parameterType="string">
         <![CDATA[

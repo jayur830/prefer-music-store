@@ -31,8 +31,9 @@ public class AgeGenderEstimation {
 		try {
 			// 모델 로드
 			this.nn = ModelSerializer.restoreComputationGraph(
-					new File(getClass().getResource("/model/age_gender_estimation_model.zip").getFile()));
-		} catch (IOException e) {
+					new File(Class.forName("com.prefer_music_store.app.model.imgproc.AgeGenderEstimation")
+							.getResource("/model/age_gender_estimation_model.zip").getFile()));
+		} catch (IOException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 	}

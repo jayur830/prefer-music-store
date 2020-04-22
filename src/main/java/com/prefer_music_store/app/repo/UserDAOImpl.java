@@ -49,14 +49,4 @@ public class UserDAOImpl implements UserDAO {
     public List<String> getUsers() {
         return this.sqlSession.selectList(namespace + ".getUsers");
     }
-
-    @Override
-    public Map<String, Object> getRatingHistory(@Param("username") String username) {
-        return this.sqlSession.selectOne(namespace + ".getRatingHistory", username);
-    }
-
-    @Override
-    public void updateRatingHistory(Map<String, Object> params) {
-        this.sqlSession.update(namespace + ".updateRatingHistory", params);
-    }
 }

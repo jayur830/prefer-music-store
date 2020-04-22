@@ -21,7 +21,6 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     @Override
     public Authentication authenticate(Authentication auth) throws AuthenticationException {
         String username = (String) auth.getPrincipal(), password = (String) auth.getCredentials();
-        //
         UserDetails user = this.userDetailsService.loadUserByUsername(username);
 
         // 아이디 또는 비밀번호가 일치하지 않는 경우

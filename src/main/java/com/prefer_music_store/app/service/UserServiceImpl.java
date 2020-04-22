@@ -13,8 +13,6 @@ public class UserServiceImpl implements UserService {
     private UserAuthDAO userAuthDAO;
     @Resource(name = "userDAO")
     private UserDAO userDAO;
-    @Resource(name = "userLogDAO")
-    private UserLogDAO userLogDAO;
     @Resource(name = "ratingDAO")
     private UserRatingDAO ratingDAO;
     @Resource(name = "storeDAO")
@@ -51,19 +49,8 @@ public class UserServiceImpl implements UserService {
         this.userDAO.deleteUserInfo(username);
         // user_auth 테이블에서 삭제
         this.userAuthDAO.deleteUserAuthInfo(username);
-        // user_log 테이블에서 삭제
-        this.userLogDAO.deleteUserLog(username);
         // user_rating 테이블에서 삭제
         this.ratingDAO.deleteUserRating(username);
-    }
-
-    @Override
-    public void updateRatingHistory(String userId, String ratingDatetime) {
-        // userId에 해당하는 유저의 최근 평점 반영 시간을 ratingDatetime으로 갱신한다.
-        this.userDAO.updateRatingHistory(
-                MapConverter.convertToHashMap(
-                        new String[] { "user_id", "rating_datetime" },
-                        new Object[] { userId, ratingDatetime }));
     }
 
     @Override

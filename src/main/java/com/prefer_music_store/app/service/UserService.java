@@ -12,6 +12,5 @@ public interface UserService {
     UserVO getUserInfo(String username);
     void editUserInfo(UserVO userVO);
     void deleteUserInfo(String username);
-    void updateRatingHistory(String userId, String ratingDatetime);
     String getStoreId(String username);
 }

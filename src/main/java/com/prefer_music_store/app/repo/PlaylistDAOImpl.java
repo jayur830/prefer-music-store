@@ -16,23 +16,28 @@ public class PlaylistDAOImpl implements PlaylistDAO {
     private static String namespace = "mappers.PlaylistMapper";
 
     @Override
-    public List<Map<String, Object>> getCurrentPlaylistAndRatings(@Param("username") String username) {
-        return this.sqlSession.selectList(namespace + ".getCurrentPlaylistAndRatings", username);
+    public Map<String, Object> getUserPlaylistAndRatingsOfUser(Map<String, Object> params) {
+        return this.sqlSession.selectOne(namespace + ".getUserPlaylistAndRatingsOfUser", params);
     }
 
     @Override
-    public List<Map<String, Object>> getCurrentPlaylistAndRatingsByKeyword(Map<String, Object> params) {
-        return this.sqlSession.selectList(namespace + ".getCurrentPlaylistAndRatingsByKeyword", params);
+    public List<Map<String, Object>> getPlaylistAndRatingsByKeywordOfUser(Map<String, Object> params) {
+        return this.sqlSession.selectList(namespace + ".getPlaylistAndRatingsByKeywordOfUser", params);
     }
 
     @Override
-    public List<Map<String, Object>> getCurrentPlaylist() {
-        return this.sqlSession.selectList(namespace + ".getCurrentPlaylist");
+    public List<Map<String, Object>> getCurrentStorePlaylist(@Param("store_id") String storeId) {
+        return this.sqlSession.selectList(namespace + ".getCurrentStorePlaylist", storeId);
     }
 
     @Override
-    public List<Map<String, Object>> getCurrentPlaylistByKeyword(@Param("keyword") String keyword) {
-        return this.sqlSession.selectList(namespace + ".getCurrentPlaylistByKeyword", keyword);
+    public List<Map<String, Object>> getCurrentStorePlaylistAndRatingsOfUser(Map<String, Object> params) {
+        return this.sqlSession.selectList(namespace + ".getCurrentStorePlaylistAndRatingsOfUser", params);
+    }
+
+    @Override
+    public List<Map<String, Object>> getPlaylistByKeyword(@Param("keyword") String keyword) {
+        return this.sqlSession.selectList(namespace + ".getPlaylistByKeyword", keyword);
     }
 
     @Override
@@ -98,6 +103,11 @@ public class PlaylistDAOImpl implements PlaylistDAO {
     @Override
     public void setGenderMaxPreferenceFlag(Map<String, Object> params) {
         this.sqlSession.update(namespace + ".setGenderMaxPreferenceFlag", params);
+    }
+
+    @Override
+    public void deleteCurrentPlaylist() {
+        this.sqlSession.delete(namespace + ".deleteCurrentPlaylistAll");
     }
 
     @Override

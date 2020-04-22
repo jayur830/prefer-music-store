@@ -23,6 +23,11 @@ public class Recommender<T extends RecommendAlgorithm> extends HashMap<String, T
         return this;
     }
 
+    public Recommender<T> initFeatures(String algorithmName, Object param) {
+        get(algorithmName).initFeatures(param);
+        return this;
+    }
+
     public List<Object> recommend(int nList) {
         List<Object> items = new ArrayList<>();
         Map<String, List<Object>> predictedItemMapper = new HashMap<>();
@@ -31,7 +36,6 @@ public class Recommender<T extends RecommendAlgorithm> extends HashMap<String, T
 
         for (Entry<String, T> algorithm : entrySet()) {
             List<Object> predictedList = algorithm.getValue().predict();
-            //overlapRemover.addAll(predictedList);
             for (int i = 0; i < predictedList.size(); ++i) {
                 if (!overlapRemover.contains(predictedList.get(i)))
                     overlapRemover.add(predictedList.get(i));

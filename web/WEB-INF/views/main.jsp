@@ -150,50 +150,71 @@
             cursor: pointer;
         }
     </style>
-
 </head>
 <body>
-<table id="form">
-    <tr><td id="btns">
-        <sec:authorize access="isAnonymous()">
-            <input type="button" id="login" value="로그인" class="btn_dark_light" />
-        </sec:authorize>
-        <sec:authorize access="isAuthenticated()">
-            <input type="button" id="user_info" value="회원정보 수정" class="btn_light_dark" />
-            <input type="button" id="logout" value="로그아웃" class="btn_dark_light" />
-        </sec:authorize>
-    </td></tr>
-    <tr><td id="search_area">
-        <input type="text" id="search" placeholder="가수 이름 또는 곡 제목 입력" />
-    </td></tr>
-    <tr><td><div id="list_area"><table id="list"></table></div></td></tr>
-</table>
-<script src="<c:url value="/resources/js/date_format.js"/>"></script>
-<script src="<c:url value="/resources/js/user.js"/>"></script>
-<script src="<c:url value="/resources/js/playlist.js"/>"></script>
-<script>
-    $("#login").on("click", () => location.replace("/login"));
-    $("#logout").on("click", () => {
-        if (confirm("로그아웃 하시겠습니까?"))
-            user.logout("${_csrf.parameterName}", "${_csrf.token}");
-    });
-    $("#user_info").on("click", () => location.replace("/user_info"));
-
-    $(document).ready(() => getCurrentPlaylist("<%=username%>", <%=authentication%>, false));
-
-    $("#search").on("keyup", () => {
-        const keyword = $("#search").val();
-        if (keyword === "") getCurrentPlaylist("<%=username%>", <%=authentication%>, false);
-        else $.get("search_action", {
-            username: "<%=username%>" === "" ? null : "<%=username%>",
-            keyword: keyword
-        }).done(playlist => {
-            if (playlist != null) $("#list").html(playlistToString("<%=username%>", <%=authentication%>, false, playlist));
-        }).fail(e => {
-            console.log(e);
-            alert("Failed to connect to server.");
+    <table id="form">
+        <tr><td id="btns">
+            <sec:authorize access="isAnonymous()">
+                <input type="button" id="login" value="로그인" class="btn_dark_light" />
+            </sec:authorize>
+            <sec:authorize access="isAuthenticated()">
+                <input type="button" id="user_info" value="회원정보 수정" class="btn_light_dark" />
+                <input type="button" id="logout" value="로그아웃" class="btn_dark_light" />
+            </sec:authorize>
+        </td></tr>
+        <tr>
+            <td id="search_area">
+                <input type="text" id="search" placeholder="가수 이름 또는 곡 제목 입력" />
+                <sec:authorize access="isAuthenticated()">
+                    <input type="button" id="view" value="매장" class="btn_light_dark" />
+                </sec:authorize>
+            </td>
+        </tr>
+        <tr><td><div id="list_area"><table id="list"></table></div></td></tr>
+    </table>
+    <script src="<c:url value="/resources/js/date_format.js"/>"></script>
+    <script src="<c:url value="/resources/js/user.js"/>"></script>
+    <script src="<c:url value="/resources/js/playlist.js"/>"></script>
+    <script>
+        $("#login").on("click", () => location.replace("/login"));
+        $("#logout").on("click", () => {
+            if (confirm("로그아웃 하시겠습니까?"))
+                user.logout("${_csrf.parameterName}", "${_csrf.token}");
         });
-    });
-</script>
+        $("#user_info").on("click", () => location.replace("/user_info"));
+
+        getCurrentPlaylist();
+
+        let isStore = $("#view").val() === "매장";
+
+        if (<%=authentication%>)
+            $("#view").on("click", function () {
+                if (isStore) {
+                    isStore = false;
+                    getUserPlaylist("<%=username%>", <%=authentication%>);
+                    $(this).val("개인");
+                } else {
+                    isStore = true;
+                    getCurrentPlaylist();
+                    $(this).val("매장");
+                }
+            });
+
+        $("#search").on("keyup", () => {
+            const keyword = $("#search").val();
+            if (keyword === "") {
+                if (isStore) getCurrentPlaylist();
+                else getUserPlaylist("<%=username%>", <%=authentication%>);
+            } else $.get("search_action", {
+                    username: "<%=username%>" === "" ? null : "<%=username%>",
+                    keyword: keyword
+                }).done(playlist => {
+                    if (playlist != null) $("#list").html(playlistToString("<%=username%>", playlist));
+                }).fail(e => {
+                    console.log(e);
+                    alert("Failed to connect to server.");
+                });
+        });
+    </script>
 </body>
 </html>

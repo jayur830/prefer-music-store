@@ -85,7 +85,6 @@
 
     <util:map id="recommendAlgorithms">
         <entry key="ageGenderPlaylistRecommendAlgorithm" value-ref="ageGenderPlaylistRecommendAlgorithm" />
-        <entry key="userHistoryPlaylistRecommendAlgorithm" value-ref="userHistoryPlaylistRecommendAlgorithm" />
     </util:map>
     <bean id="recommender" class="com.prefer_music_store.app.model.recommendation.api.Recommender"
           p:recommendAlgorithms-ref="recommendAlgorithms"
@@ -93,5 +92,8 @@
 
     <!-- Background Engine -->
     <bean id="mainEngine" class="com.prefer_music_store.app.engine.MainEngine" />
+
+    <!-- Destroyer -->
+    <bean id="destroyer" class="com.prefer_music_store.app.engine.ServerDestroyer" destroy-method="destroy" />
 
 </beans>
