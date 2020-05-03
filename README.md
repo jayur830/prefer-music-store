@@ -8,7 +8,6 @@ To use this system, the following installation is required:
 
 ### Libraries
 - DeepLearning4j
-- ReactJS
 
 ### Frameworks
 - Spring 5.2.3.RELEASE
