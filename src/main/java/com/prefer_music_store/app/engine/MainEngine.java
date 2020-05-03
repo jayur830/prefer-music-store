@@ -29,15 +29,19 @@ public class MainEngine {
 
     private Map<String, Thread> threadPool = new HashMap<>();
     private Map<String, Boolean> updatedPlaylist = new HashMap<>();
-//    private Map<String, DataTransfer> sockets = new HashMap<>();
+    private Map<String, DataTransfer> sockets = new HashMap<>();
 
     public boolean isStarted(String storeId) {
         return this.threadPool.containsKey(storeId);
     }
 
+    //private final String IP = "192.168.219.106";
+    private final String IP = "localhost";
+    private final int PORT = 41257;
+
     @Transactional
     public void init(String storeId) {
-//        DataTransfer dataTransfer = new DataTransferClient("localhost", 41257);
+        DataTransfer dataTransfer = new DataTransferClient(this.IP, this.PORT);
         Thread thread = new Thread(() -> {
             while (isStarted(storeId)) {
                 updatedPlaylist.replace(storeId, false);
@@ -46,15 +50,14 @@ public class MainEngine {
                  * */
                 String path = getClass().getResource("/model/input.jpg").getPath().substring(1);
 
-//                if (!dataTransfer.receiveFile(path)) {
-//                    dataTransfer.send("-1");
-//                    continue;
-//                } else dataTransfer.send("0");
+                if (!dataTransfer.receiveFile(path)) {
+                    dataTransfer.send("-1");
+                    continue;
+                } else dataTransfer.send("0");
 
                 Mat img = Imgcodecs.imread(path);
 
-                recommender
-                        .initFeatures("ageGenderPlaylistRecommendAlgorithm", img);
+                recommender.initFeatures("ageGenderPlaylistRecommendAlgorithm", img);
 
                 if (!isStarted(storeId)) throw new RuntimeException("Thread interrupted");
                 /**
@@ -84,53 +87,53 @@ public class MainEngine {
 
                 int playlistSize = playlist.size();
 
-//                dataTransfer.send(Integer.toString(playlistSize));
+                dataTransfer.send(Integer.toString(playlistSize));
 
-//                for (int i = 0; i < playlistSize; ++i) {
-//                    Object songId = playlist.get(i);
-//                    System.out.println("song_id: " + songId);
-//                    try {
-//                        URL resource = Class.forName("com.prefer_music_store.app.engine.MainEngine")
-//                                .getResource("/audio/" + songId + ".mp3");
-//                        if (resource == null) continue;
-//                        do {
-//                            dataTransfer.sendFile(new File(resource.getFile()));
-//                            System.out.println("success to send the audio file");
-//                        } while (dataTransfer.receive().equals("-1"));
-//                    } catch (ClassNotFoundException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                    if (!isStarted(storeId)) throw new RuntimeException("Thread interrupted");
-//
-//                    while (true) {
-//                        if (!isStarted(storeId)) throw new RuntimeException("Thread interrupted");
-//
-//                        System.out.println("wait for receiving signal");
-//                        int signal = Integer.parseInt(dataTransfer.receive());
-//                        System.out.println("received signal: " + signal);
-//
-//                        if (signal == 0) break;
-//                        else if (signal == 1) {
-//                            /**
-//                             * 플레이리스트 내 모든 곡들의 재생이 끝나면 모델을 학습한다.
-//                             * - 성별, 연령대 선호도 분포 갱신
-//                             * - MF 파라미터 갱신
-//                             * */
-//                            recommender.update();
-//                            historyAlgorithm.update();
-//                        }
-//
-//                        if (!isStarted(storeId)) throw new RuntimeException("Thread interrupted");
-//                    }
-//                }
-                try {
-                    Thread.sleep(120000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                for (int i = 0; i < playlistSize; ++i) {
+                    Object songId = playlist.get(i);
+                    System.out.println("song_id: " + songId);
+                    try {
+                        URL resource = Class.forName("com.prefer_music_store.app.engine.MainEngine")
+                                .getResource("/audio/" + songId + ".mp3");
+                        if (resource == null) continue;
+                        do {
+                            dataTransfer.sendFile(new File(resource.getFile()));
+                            System.out.println("success to send the audio file");
+                        } while (dataTransfer.receive().equals("-1"));
+                    } catch (ClassNotFoundException e) {
+                        e.printStackTrace();
+                    }
+
+                    if (!isStarted(storeId)) throw new RuntimeException("Thread interrupted");
+
+                    while (true) {
+                        if (!isStarted(storeId)) throw new RuntimeException("Thread interrupted");
+
+                        System.out.println("wait for receiving signal");
+                        int signal = Integer.parseInt(dataTransfer.receive());
+                        System.out.println("received signal: " + signal);
+
+                        if (signal == 0) break;
+                        else if (signal == 1) {
+                            /**
+                             * 플레이리스트 내 모든 곡들의 재생이 끝나면 모델을 학습한다.
+                             * - 성별, 연령대 선호도 분포 갱신
+                             * - MF 파라미터 갱신
+                             * */
+                            recommender.update();
+                            historyAlgorithm.update();
+                        }
+
+                        if (!isStarted(storeId)) throw new RuntimeException("Thread interrupted");
+                    }
                 }
-                recommender.update();
-                historyAlgorithm.update();
+//                try {
+//                    Thread.sleep(120000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//                recommender.update();
+//                historyAlgorithm.update();
             }
         });
         thread.setDaemon(true);
@@ -138,7 +141,7 @@ public class MainEngine {
 
         this.threadPool.put(storeId, thread);
         this.updatedPlaylist.put(storeId, false);
-//        this.sockets.put(storeId, dataTransfer);
+        this.sockets.put(storeId, dataTransfer);
     }
 
     @Transactional
@@ -148,8 +151,8 @@ public class MainEngine {
         this.threadPool.get(storeId).interrupt();
         this.threadPool.remove(storeId);
         this.updatedPlaylist.remove(storeId);
-//        this.sockets.get(storeId).close();
-//        this.sockets.remove(storeId);
+        this.sockets.get(storeId).close();
+        this.sockets.remove(storeId);
     }
 
     public boolean isUpdatedPlaylist(String storeId) {

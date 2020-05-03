@@ -7,51 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af4659c8-d85c-4b68-b303-fe410f354413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/engine/ServerDestroyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/data_transfer/DataTransfer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/data_transfer/DataTransferClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/data_transfer/DataTransferServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19f79f32-e4f4-4095-baa4-2590bb6fbb8a.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19f79f32-e4f4-4095-baa4-2590bb6fbb8a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/controller/DataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/controller/DataController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/engine/MainEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/engine/MainEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/imgproc/AgeGenderEstimation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/imgproc/AgeGenderEstimation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/AgeGenderPlaylistRecommendAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/PlaylistRandomRecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/PlaylistRandomRecommendAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/PlaylistRecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/PlaylistRecommendAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/algo/UserHistoryPlaylistRecommendAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/RecommendAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/RecommendAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/Recommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/model/recommendation/api/Recommender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/PlaylistDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/StoreDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/StoreDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/StoreDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/StoreDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserLogDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/repo/UserVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginFailureHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/LoginSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/PlaylistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/PlaylistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/PlaylistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/util/UserRFMCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/log-mapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/playlist-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/playlist-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/store-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/store-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/user-mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/model/sample.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/model/input.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/js/playlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/js/playlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prefer_music_store/app/security/CustomLogoutSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/securityContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/securityContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../music-store" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.16699219" />
     <property name="project.structure.side.proportion" value="0.26327944" />
@@ -405,7 +364,17 @@
       <workItem from="1587299817435" duration="1441000" />
       <workItem from="1587388629327" duration="21838000" />
       <workItem from="1587463308820" duration="9507000" />
-      <workItem from="1587539205824" duration="1910000" />
+      <workItem from="1587539205824" duration="13992000" />
+      <workItem from="1587561457952" duration="10856000" />
+      <workItem from="1587735434538" duration="4282000" />
+      <workItem from="1587901700701" duration="3011000" />
+      <workItem from="1588141610558" duration="723000" />
+      <workItem from="1588220015402" duration="3939000" />
+      <workItem from="1588323266271" duration="618000" />
+      <workItem from="1588325072734" duration="851000" />
+      <workItem from="1588327848386" duration="1988000" />
+      <workItem from="1588403562342" duration="492000" />
+      <workItem from="1588422042155" duration="1418000" />
     </task>
     <servers />
   </component>
@@ -449,58 +418,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585489371928" />
-    <state x="598" y="310" key="FileChooserDialogImpl" timestamp="1587466779421">
+    <state x="598" y="310" key="FileChooserDialogImpl" timestamp="1588424866452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="310" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587466779421" />
-    <state width="1877" height="354" key="GridCell.Tab.0.bottom" timestamp="1587488573180">
+    <state x="598" y="310" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588424866452" />
+    <state width="1130" height="881" key="GridCell.Tab.0.bottom" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.0.center" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.0.center" timestamp="1588431341619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.0.left" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341619" />
+    <state width="1130" height="881" key="GridCell.Tab.0.left" timestamp="1588431341619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.0.right" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341619" />
+    <state width="1130" height="881" key="GridCell.Tab.0.right" timestamp="1588431341619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.1.bottom" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341619" />
+    <state width="1130" height="881" key="GridCell.Tab.1.bottom" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.1.center" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.1.center" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.1.left" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.1.left" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.1.right" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.1.right" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.2.bottom" timestamp="1587488573182">
+    <state width="1130" height="881" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.2.bottom" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573182" />
-    <state width="1877" height="354" key="GridCell.Tab.2.center" timestamp="1587488573181">
+    <state width="1130" height="881" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.2.center" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573181" />
-    <state width="1877" height="354" key="GridCell.Tab.2.left" timestamp="1587488573180">
+    <state width="1130" height="881" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.2.left" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573180" />
-    <state width="1877" height="354" key="GridCell.Tab.2.right" timestamp="1587488573182">
+    <state width="1130" height="881" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
+    <state width="1130" height="881" key="GridCell.Tab.2.right" timestamp="1588431341620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="354" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587488573182" />
+    <state width="1130" height="881" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588431341620" />
     <state width="1439" height="452" key="GridCell.Tab.3.bottom" timestamp="1585606536118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -537,10 +506,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586872564062" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587403022071">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588232444370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587403022071" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588232444370" />
     <state x="640" y="203" key="spring file set editor" timestamp="1585420399930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

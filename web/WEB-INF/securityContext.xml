@@ -24,7 +24,7 @@
                     login-page="/login"
                     authentication-failure-handler-ref="loginFailureHandler"
                     authentication-success-handler-ref="loginSuccessHandler" />
-        <logout logout-url="/logout" success-handler-ref="customLogoutSuccessHandler" />
+        <logout logout-url="/logout" logout-success-url="/login" />
 
         <session-management invalid-session-url="/login">
             <concurrency-control max-sessions="1" expired-url="/login" error-if-maximum-exceeded="true" />
