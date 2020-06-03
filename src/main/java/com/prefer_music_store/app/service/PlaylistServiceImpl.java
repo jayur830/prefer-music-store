@@ -27,6 +27,7 @@ public class PlaylistServiceImpl implements PlaylistService {
     @Override
     public List<Map<String, Object>> getCurrentStorePlaylist(String username, double latitude, double longitude) {
         List<Map<String, Object>> stores = this.storeDAO.getStores();
+        if (stores == null || stores.isEmpty()) return null;
         Map<Double, String> distances = new TreeMap<>();
         for (Map<String, Object> store : stores) {
             double _latitude = (double) store.get("latitude"),

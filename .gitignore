@@ -1,3 +1,4 @@
 out/
 target/
 *.mp3
+*.sql

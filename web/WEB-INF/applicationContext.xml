@@ -15,7 +15,7 @@
     <!-- Database Connection -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
           p:driverClassName="com.mysql.cj.jdbc.Driver"
-          p:url="jdbc:mysql://localhost:3306/playlist?serverTimezone=UTC"
+          p:url="jdbc:mysql://localhost:3306/prefer_music_store?serverTimezone=UTC"
           p:username="root"
           p:password="wlfkfgksek95+" />
 
@@ -57,7 +57,7 @@
           p:host="smtp.gmail.com"
           p:port="587"
           p:username="jayur830@gmail.com"
-          p:password="wlfkfgksek95+"
+          p:password="lwssjghuahpcoceh"
           p:javaMailProperties-ref="javaMailProperties" />
 
     <!-- Transaction -->

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="playlist@localhost" uuid="97afc262-fb6c-46a5-afa9-a82f8171f2cf">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/playlist?serverTimezone=UTC</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="User Data Source [4] -" uuid="3818c305-ebf3-42b5-9325-c116fcc3f11f">
-      <driver-ref>572710ad-ff97-4006-a622-5b0f54c2a6ae</driver-ref>
       <synchronize>true</synchronize>
       <configured-by-url>true</configured-by-url>
       <jdbc-driver>java.sql.Driver</jdbc-driver>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - prefer_music_store@localhost" uuid="879c2dbd-4644-45a1-bec8-e8aa26bc5093">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/prefer_music_store?serverTimezone=UTC</jdbc-url>
     </data-source>
   </component>
 </project>

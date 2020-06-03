@@ -1,9 +1,11 @@
 package com.prefer_music_store.app.aspect;
 
 import com.prefer_music_store.app.repo.PlaylistDAO;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
@@ -81,5 +83,18 @@ public class LoggingAspect {
         System.out.println("[Normalization]");
         for (Map.Entry<String, Object> i : item.entrySet())
             System.out.println(String.format("%s: %.4f", i.getKey(), (double) i.getValue()));
+    }
+
+    @Around(value = "execution(* *..EmailUtils.*(..))")
+    public Object printEmailLog(ProceedingJoinPoint joinPoint) {
+        Object point = null;
+        try {
+            System.out.println("Send email...");
+            point = joinPoint.proceed();
+            System.out.println("Success to send email!");
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        return point;
     }
 }

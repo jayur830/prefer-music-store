@@ -14,7 +14,7 @@
         <org.springframework-security-version>5.2.1.RELEASE</org.springframework-security-version>
         <org.aspectj-version>1.9.5</org.aspectj-version>
         <org.slf4j-version>2.0.0-alpha1</org.slf4j-version>
-        <org.nd4j-version>1.0.0-beta6</org.nd4j-version>
+        <org.dl4j-version>1.0.0-beta6</org.dl4j-version>
     </properties>
 
     <dependencies>
@@ -135,16 +135,29 @@
         <!-- DL4J -->
         <dependency>
             <groupId>org.deeplearning4j</groupId>
-            <artifactId>dl4j-examples</artifactId>
-            <version>1.0.0-beta6</version>
+            <artifactId>deeplearning4j-core</artifactId>
+            <version>${org.dl4j-version}</version>
         </dependency>
-
-<!--        &lt;!&ndash; ND4J &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.nd4j</groupId>-->
-<!--            <artifactId>nd4j-native-platform</artifactId>-->
-<!--            <version>${org.nd4j-version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.deeplearning4j</groupId>
+            <artifactId>deeplearning4j-nn</artifactId>
+            <version>${org.dl4j-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>opencv-platform</artifactId>
+            <version>4.1.2-1.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>opencv</artifactId>
+            <version>4.1.2-1.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.datavec</groupId>
+            <artifactId>datavec-data-image</artifactId>
+            <version>${org.dl4j-version}</version>
+        </dependency>
 
         <!-- Generate random string -->
         <dependency>
@@ -153,6 +166,7 @@
             <version>3.9</version>
         </dependency>
 
+        <!-- Convert to between JSON and Map -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
