@@ -1,6 +1,6 @@
-# Intelligent Music Selection System based on Matrix Factorization
+# Intelligent Music Selection System
 
-It allows people to rate songs from the store, learn them using Matrix Factorization, collect songs that match their tastes, and recommend them as playlists.
+It allows people to rate songs from the store, learn them using Matrix Factorization and Convolutional Nerual Network, collect songs that match their tastes, and recommend them as playlists.
 
 ## Dependencies
 
