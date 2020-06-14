@@ -19,8 +19,8 @@ public class UserServiceImpl implements UserService {
     private StoreDAO storeDAO;
 
     @Override
-    public void signUp(UserVO userVO) {
-        this.userDAO.signUp(userVO);
+    public void signUp(UserDTO userDTO) {
+        this.userDAO.signUp(userDTO);
     }
 
     @Override
@@ -34,13 +34,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserVO getUserInfo(String username) {
+    public UserDTO getUserInfo(String username) {
         return this.userDAO.getUserInfo(username);
     }
 
     @Override
-    public void editUserInfo(UserVO userVO) {
-        this.userDAO.editUserInfo(userVO);
+    public void editUserInfo(UserDTO userDTO) {
+        this.userDAO.editUserInfo(userDTO);
     }
 
     @Override

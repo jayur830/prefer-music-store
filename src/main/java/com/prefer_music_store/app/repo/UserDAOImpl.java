@@ -16,8 +16,8 @@ public class UserDAOImpl implements UserDAO {
     private static String namespace = "mappers.UserMapper";
 
     @Override
-    public void signUp(UserVO userVO) {
-        this.sqlSession.insert(namespace + ".signUp", userVO);
+    public void signUp(UserDTO userDTO) {
+        this.sqlSession.insert(namespace + ".signUp", userDTO);
     }
 
     @Override
@@ -31,13 +31,13 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public UserVO getUserInfo(@Param("username") String username) {
+    public UserDTO getUserInfo(@Param("username") String username) {
         return this.sqlSession.selectOne(namespace + ".getUserInfo", username);
     }
 
     @Override
-    public void editUserInfo(UserVO userVO) {
-        this.sqlSession.update(namespace + ".editUserInfo", userVO);
+    public void editUserInfo(UserDTO userDTO) {
+        this.sqlSession.update(namespace + ".editUserInfo", userDTO);
     }
 
     @Override

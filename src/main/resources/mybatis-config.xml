@@ -4,6 +4,6 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.prefer_music_store.app.security.CustomUserDetails" alias="user_auth" />
-		<typeAlias type="com.prefer_music_store.app.repo.UserVO" alias="user" />
+		<typeAlias type="com.prefer_music_store.app.repo.UserDTO" alias="user" />
 	</typeAliases>
 </configuration>

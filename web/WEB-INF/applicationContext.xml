@@ -70,7 +70,7 @@
     </bean>
 
     <util:map id="userTable" map-class="java.util.HashMap"
-              key-type="java.lang.String" value-type="com.prefer_music_store.app.repo.UserVO" />
+              key-type="java.lang.String" value-type="com.prefer_music_store.app.repo.UserDTO" />
 
     <util:list id="userIndexToId" list-class="java.util.ArrayList" value-type="java.lang.String" />
     <util:list id="itemIndexToId" list-class="java.util.ArrayList" value-type="java.lang.Integer" />

@@ -4,7 +4,7 @@ import com.prefer_music_store.app.model.imgproc.AgeGenderEstimation;
 import com.prefer_music_store.app.model.imgproc.FaceDetection;
 import com.prefer_music_store.app.repo.PlaylistDAO;
 import com.prefer_music_store.app.repo.UserRatingDAO;
-import com.prefer_music_store.app.repo.UserVO;
+import com.prefer_music_store.app.repo.UserDTO;
 import com.prefer_music_store.app.util.MapConverter;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.factory.Nd4j;
@@ -27,7 +27,7 @@ public class AgeGenderPlaylistRecommendAlgorithm implements PlaylistRecommendAlg
     @Resource(name = "ratingDAO")
     private UserRatingDAO ratingDAO;
     @Resource(name = "userTable")
-    private Map<String, UserVO> userTable;
+    private Map<String, UserDTO> userTable;
 
     @Resource(name = "ageGenderEstimation")
     private AgeGenderEstimation ageGenderEstimation;

@@ -1,15 +1,12 @@
 package com.prefer_music_store.app.controller;
 
 import com.prefer_music_store.app.engine.MainEngine;
-import com.prefer_music_store.app.repo.UserVO;
-import com.prefer_music_store.app.security.CustomUserDetails;
+import com.prefer_music_store.app.repo.UserDTO;
 import com.prefer_music_store.app.security.CustomUserDetailsService;
 import com.prefer_music_store.app.service.PlaylistService;
 import com.prefer_music_store.app.service.UserService;
 import com.prefer_music_store.app.util.MapConverter;
 import com.prefer_music_store.app.util.MessageUtils;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
@@ -38,8 +35,8 @@ public class UserController {
 
     @Transactional
     @PostMapping("/sign_up_action")
-    public void signUpAction(UserVO userVO) {
-        this.userService.signUp(userVO);
+    public void signUpAction(UserDTO userDTO) {
+        this.userService.signUp(userDTO);
     }
 
     @PostMapping("/find_username_action")
@@ -68,21 +65,21 @@ public class UserController {
 
     @Transactional
     @PostMapping("/get_user_info")
-    public UserVO getUserInfo(
+    public UserDTO getUserInfo(
             @RequestParam("username") String username,
             @RequestParam("password") String password) {
-        UserVO user = this.userService.getUserInfo(username);
+        UserDTO user = this.userService.getUserInfo(username);
         user.setPassword(password);
         return user;
     }
 
     @Transactional
     @PostMapping("/edit_user_info")
-    public void editUserInfo(UserVO userVO) {
-        this.userService.editUserInfo(userVO);
-        if (userVO.getPassword() != null && !userVO.getPassword().isEmpty())
+    public void editUserInfo(UserDTO userDTO) {
+        this.userService.editUserInfo(userDTO);
+        if (userDTO.getPassword() != null && !userDTO.getPassword().isEmpty())
             this.userDetailsService.changePassword(
-                    userVO.getUsername(), userVO.getPassword());
+                    userDTO.getUsername(), userDTO.getPassword());
     }
 
     @Transactional

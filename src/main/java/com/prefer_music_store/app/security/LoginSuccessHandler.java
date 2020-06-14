@@ -2,7 +2,7 @@ package com.prefer_music_store.app.security;
 
 import com.prefer_music_store.app.repo.UserAuthDAO;
 import com.prefer_music_store.app.repo.UserDAO;
-import com.prefer_music_store.app.repo.UserVO;
+import com.prefer_music_store.app.repo.UserDTO;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.WebAttributes;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
@@ -23,7 +23,7 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
     @Resource(name = "userAuthDAO")
     private UserAuthDAO userAuthDAO;
     @Resource(name = "userTable")
-    private Map<String, UserVO> userTable;
+    private Map<String, UserDTO> userTable;
 
     @Transactional
     @Override

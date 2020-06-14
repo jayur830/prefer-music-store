@@ -7,6 +7,9 @@ import java.io.IOException;
 
 import org.datavec.image.loader.NativeImageLoader;
 import org.deeplearning4j.nn.graph.ComputationGraph;
+import org.deeplearning4j.nn.modelimport.keras.KerasModelImport;
+import org.deeplearning4j.nn.modelimport.keras.exceptions.InvalidKerasConfigurationException;
+import org.deeplearning4j.nn.modelimport.keras.exceptions.UnsupportedKerasConfigurationException;
 import org.deeplearning4j.util.ModelSerializer;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.factory.Nd4j;
@@ -26,14 +29,10 @@ public class AgeGenderEstimation {
 	private ComputationGraph nn = null;
 
 	public AgeGenderEstimation() {
-//        ComputationGraph nn = KerasModelImport.importKerasModelAndWeights("history_16_8.h5", false);
-//        ModelSerializer.writeModel(nn, new File("age_gender_estimation_model.zip"), true);
 		try {
 			// 모델 로드
-			this.nn = ModelSerializer.restoreComputationGraph(
-					new File(Class.forName("com.prefer_music_store.app.model.imgproc.AgeGenderEstimation")
-							.getResource("/model/age_gender_estimation_model.zip").getFile()));
-		} catch (IOException | ClassNotFoundException e) {
+			this.nn = ModelSerializer.restoreComputationGraph(getClass().getResource("/model").getPath() + "age_gender_estimation.zip");
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

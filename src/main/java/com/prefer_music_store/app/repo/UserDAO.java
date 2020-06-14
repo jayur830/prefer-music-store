@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 public interface UserDAO {
-    void signUp(UserVO userVO);
+    void signUp(UserDTO userDTO);
     String findUsername(Map<String, Object> params);
     boolean existUserByUsernameAndEmail(Map<String, Object> params);
-    UserVO getUserInfo(@Param("username") String username);
-    void editUserInfo(UserVO userVO);
+    UserDTO getUserInfo(@Param("username") String username);
+    void editUserInfo(UserDTO userDTO);
     void deleteUserInfo(@Param("username") String username);
     List<String> getUsers();
 }
